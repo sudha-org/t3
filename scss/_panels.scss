@@ -1,0 +1,8 @@
+.panel {
+
+	margin-top: $panel-margin-top;
+
+	&.no-border {
+		border: none;
+	}
+}

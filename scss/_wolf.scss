@@ -1,0 +1,288 @@
+.wolf-landing-container {
+	h1 {
+		font-size: rem-calc(32);
+		line-height: rem-calc(34);
+	}
+	h2 {
+		font-size: rem-calc(24);
+		line-height: rem-calc(26);
+	}
+	@media #{$medium-up} {
+		h1 {
+			font-size: rem-calc(50);
+			line-height: rem-calc(54);
+		}
+		h2 {
+			font-size: rem-calc(30);
+			line-height: rem-calc(32);
+			}
+	}
+	.banner {
+		background-image: url("/lib/img/banners/wolf-header-m.jpg");
+		background-position: bottom right;
+		background-size: 80%;
+		background-repeat: no-repeat;
+		height: rem-calc(500);
+		background-color: rgb(247,246,246);
+		h1 {
+			font-size: rem-calc(32);
+			line-height: rem-calc(34);
+			padding-bottom: rem-calc(10);
+		}
+		h2 {
+			font-size: rem-calc(24);
+			line-height: rem-calc(26);
+			padding-bottom: rem-calc(60);
+		}
+		@media #{$medium-up} {
+			background-image: url("/lib/img/banners/wolf-header-t.jpg");
+			height: rem-calc(770);
+			background-size: auto;
+			h1 {
+				font-size: rem-calc(50);
+				line-height: rem-calc(54);
+				padding-bottom: rem-calc(80);
+			}
+			h2 {
+				font-size: rem-calc(30);
+				line-height: rem-calc(32);
+				padding-bottom: rem-calc(120);
+			}
+		}
+		@media #{$large-up} {
+			background-image: url("/lib/img/banners/wolf-header-d.jpg");
+			background-position: bottom center;
+			height: rem-calc(640);
+			h1 {
+				font-size: rem-calc(50);
+				line-height: rem-calc(54);
+				padding-bottom: rem-calc(70);
+			}
+			h2 {
+				font-size: rem-calc(40);
+				line-height: rem-calc(42);
+				padding-bottom: rem-calc(120);
+			}
+		}
+	}
+	.wolf-information-container {
+		// display: none;
+		.wolf-information {
+			h2 {
+				font-size: rem-calc(24);
+				line-height: rem-calc(26);
+			}
+			@media #{$medium-up} {
+				h2 {
+					font-size: rem-calc(32);
+					line-height: rem-calc(34);
+				}
+				p {
+					font-size: rem-calc(20);
+					line-height: rem-calc(22);
+				}
+			}
+		}
+	}
+	.fix-you-up {
+		h1 {
+			font-size: rem-calc(32);
+			line-height: rem-calc(34);
+			margin-bottom: rem-calc(75);
+		}
+		.button {
+			width: rem-calc(250);
+			margin-bottom: rem-calc(40);
+		}
+		@media #{$medium-up} {
+			h1 {
+				font-size: rem-calc(40);
+				line-height: rem-calc(42);
+			}
+		}
+	}
+	.billy {
+		min-height: rem-calc(600);
+		background-image: url("/lib/img/banners/billy-m.jpg");
+		background-size: 80%;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		background-color: rgb(247,246,246);
+		h2 {
+			font-size: rem-calc(32);
+			line-height: rem-calc(34);
+		}
+		@media #{$medium-up} {
+			background-image: url("/lib/img/banners/billy-t.jpg");
+			background-size: auto;
+			background-position: bottom left;
+			min-height: rem-calc(775);
+			h2 {
+				font-size: rem-calc(40);
+				line-height: rem-calc(42);
+			}
+		}
+		@media #{$large-up} {
+			background-image: url("/lib/img/banners/billy-d.jpg");
+			background-size: auto;
+			background-position: center center;
+			min-height: rem-calc(460);
+			h2 {
+				font-size: rem-calc(40);
+				line-height: rem-calc(42);
+				padding-bottom: rem-calc(70);
+			}
+		}	
+	}
+	.wolf-traffic-bg, .wolf-traffic-full-width-bg {
+		background-image: url("/lib/img/wolf-traffic-m.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom left;
+		height: rem-calc(500);
+	}
+	.wolf-break-in-bg {
+		background-image: url("/lib/img/wolf-break-in-m.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom left;
+	}
+	.wolf-fire-bg {
+		background-image: url("/lib/img/wolf-fire-m.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom left;
+
+	}
+	.wolf-write-off-bg {
+		background-image: url("/lib/img/wolf-write-off-m.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom left;
+	}
+	@media #{$medium-only} {
+		.wolf-traffic-bg, .wolf-traffic-full-width-bg {
+			background-image: url("/lib/img/wolf-traffic-t.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom left;
+			height: rem-calc(775);
+		}
+		.wolf-break-in-bg {
+			background-image: url("/lib/img/wolf-break-in-t.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom left;
+		}
+		.wolf-fire-bg {
+			background-image: url("/lib/img/wolf-fire-t.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom left;
+		}
+		.wolf-write-off-bg {
+			background-image: url("/lib/img/wolf-write-off-t.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom left;
+		}
+	}
+	@media #{$large-up} {
+		.wolf-traffic-full-width-bg {
+			background-image: url("/lib/img/banners/wolf-traffic-warden-d.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: top;
+			height: rem-calc(430);
+		}
+		.wolf-traffic-bg {
+			background-image: url("/lib/img/wolf-traffic-d.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: top;
+
+		}
+		.wolf-break-in-bg {
+			background-image: url("/lib/img/wolf-break-in-d.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: top;
+
+		}
+		.wolf-fire-bg {
+			background-image: url("/lib/img/wolf-fire-d.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: top;
+
+		}
+		.wolf-write-off-bg {
+			background-image: url("/lib/img/wolf-write-off-d.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: top;
+		}
+	}
+
+	.vertical-container-wrapper {
+		display: table;
+	}
+	.vertical-element-wrapper {
+		display: table-cell;
+		vertical-align: middle;
+	}
+   	.common-column-height {
+		@media #{$small-only} {
+			height: 600px;
+		}
+		@media #{$medium-only} {
+			height: 700px;
+		}
+		@media #{$large-up} {
+			height: 682px;
+		}
+	}
+	.common-column-height-medium-down {
+
+		@media #{$small-up} {
+			height: 600px;
+		}
+		@media #{$medium-up} {
+			height: 700px;
+		}
+		@media #{$large-up} {
+			height: 500px;
+		}
+	}
+	.seven-day-repair{
+		@media #{$small-up} {
+			height: rem-calc(600);
+			background-image: url("/lib/img/banners/7day-image-mobile.jpg");
+		}
+		@media #{$medium-up} {
+			background-image: url("/lib/img/banners/7day-image.jpg");
+			height: rem-calc(432);
+		}
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top;
+	}
+}
+
+
+
+.wolf-break-in-banner-bg {
+	@media #{$small-up} {
+		height: rem-calc(600);
+		background-image: url("/lib/img/wolf-break-in-m.jpg");
+	}
+
+	@media #{$medium-up} {
+		height: rem-calc(450);
+		background-image: url("/lib/img/banners/wolf-break-in-banner.jpg");
+	}
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}

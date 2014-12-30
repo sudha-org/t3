@@ -1,0 +1,482 @@
+
+.video-arrow {
+    z-index: 1;
+    @include triangle(bottom, 50%, $red, rem-calc(35));
+    @media #{$medium-up} {
+        @include triangle(right, 30%, $red, rem-calc(50));
+    }
+}
+.cover-extras {
+    [class^="i-"], [class*=" i-"] {
+        font-size: rem-calc(160);
+    }
+    p {
+        line-height: rem-calc(20);
+        padding-top: rem-calc(35);
+        font-size: rem-calc(19);
+    }
+}
+
+/* Car Claim Pages */
+.icon-list {
+    height: rem-calc(80);
+    display: table;
+    .icon-list-item {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+/* Car Landing Page: Under-21 Section */
+
+.procedural-list {
+    .procedural-list-number {
+        span {
+            font-size: rem-calc(45);
+        }
+    }
+}
+.padding-right-medium {
+    padding-right: 5rem;
+    @media #{$medium-up} {
+        padding-right: 8rem;
+    } 
+}
+.padding-left-small {
+    padding-left: 5rem;
+}
+.coloured-text-box {
+    p {
+        color: $white;
+        font-size: rem-calc(16);
+        line-height: rem-calc(24);
+    }
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+}
+.coloured-text-box-small-padding {
+    p {
+        color: $white;
+        font-size: rem-calc(16);
+        line-height: rem-calc(24);
+    }
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+    padding-right: 5%;
+}
+.floated-text-box {
+    @extend .coloured-text-box;
+    margin: 40px auto;
+    p {
+        color: $white;
+        font-size: rem-calc(16);
+        line-height: rem-calc(20);
+    }
+}
+.big-number-list {
+    padding-bottom: 70px;
+    .padding-bottom-medium {
+        padding-bottom: 25px;
+    }
+    .close-button {
+        font-size: 4rem;
+    }
+}
+.imac {
+    padding-top: rem-calc(112);
+}
+@media #{$medium-up} {
+    .procedural-list {
+        .procedural-list-number {
+            span {
+                font-size: rem-calc(90);
+            }
+        }
+    }
+    .coloured-text-box {
+        p {
+            color: $white;
+            font-size: rem-calc(34);
+            line-height: rem-calc(36);
+        }
+        padding: 8.9% 5% 4% 5%;
+    }
+    .floated-text-box {
+        @extend .coloured-text-box;
+        margin: 150px auto;
+        p {
+            color: $white;
+            font-size: rem-calc(28);
+            line-height: rem-calc(30);
+        }
+    }
+    .imac {
+        padding-top: 3.5rem;
+    }
+}
+@media #{$small-only} {
+#video-wrapper {
+        position: relative;
+        .video-cover {
+            background-color: white;
+        }
+        .video-player {
+            z-index: -1000;
+            display: none;
+            background-color: black;
+            position: relative;
+        
+            .close-button-overview {
+                position: absolute;
+                right: 5px;
+                top: 5px;
+                cursor: pointer;
+            }
+        }
+        .play-icon {
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media #{$medium-up} {
+    #video-wrapper {
+        position: relative;
+        height: 600px;
+        overflow: hidden;
+        .video-cover {
+            background-color: white;
+        }
+        .video-player {
+            z-index: -1000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            background-color: black;
+        
+            .close-button-overview {
+                position: absolute;
+                right: 5px;
+                top: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .coloured-text-box {
+        p {
+            color: $white;
+            font-size: rem-calc(28);
+            line-height: rem-calc(30);
+        }
+        padding: 8.9% 0 0 0;
+    }
+    .floated-text-box {
+        padding: 8.9% 5% 7%;
+        margin: 100px 200px 100px 0;
+        p {
+            color: $white;
+            font-size: rem-calc(28);
+            line-height: rem-calc(30);
+        }
+    }
+}
+.driveplus-container {
+    .driveplus-label {
+                padding-bottom: rem-calc(30);
+                .round-label {
+                    height: 12.5rem;
+                    width: 12.5rem;
+                }
+            }
+            .driveplus-phone {
+                padding-bottom: rem-calc(20);
+            }
+            .driveplus-equals {
+                h2 {
+                    font-size: rem-calc(80);
+                    padding-top: rem-calc(10);
+                }
+            }
+            .driveplus-plus {
+                h2 {
+                    font-size: rem-calc(80);
+                    padding-top: rem-calc(10);
+                }   
+            }
+    @media #{$medium-up} {
+        .driveplus-diagram-wrapper {
+            .driveplus-box {
+                padding-top: rem-calc(65);
+                padding-bottom: 0;
+                overflow: hidden;
+            }
+            .driveplus-plus {
+                h2 {
+                    font-size: rem-calc(50);
+                    padding-top: rem-calc(155);
+                }   
+            }
+            .driveplus-phone {
+                padding-bottom: 0;
+            }
+            .driveplus-equals {
+                h2 {
+                    font-size: rem-calc(50);
+                    padding-top: rem-calc(155);
+                }
+            }
+            .driveplus-label {
+                padding-top: rem-calc(35);
+                .round-label {
+                    height: 10rem;
+                    width: 10rem;
+                    p {
+                        font-size: rem-calc(22);
+                    }
+                }
+            }
+            @media #{$large-up} {
+                .driveplus-label {
+                    padding-top: rem-calc(18);
+                    .round-label {
+                        height: 12rem;
+                        width: 12rem;
+                        p {
+                            font-size: 1.875rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .iphone {
+            max-height: rem-calc(250);
+            @media #{$medium-up} {
+                img {
+                    max-width: rem-calc(768);
+                }
+            }
+            @media #{$large-up} {
+                img {
+                    max-width: rem-calc(510);
+                }
+            }
+        }
+    }
+}
+
+// Car learn more 
+
+.learn-more {
+    @media #{$large-up} {
+    min-height: rem-calc(420);
+    }
+
+    @media #{$medium-only} {
+        min-height: rem-calc(570)
+    }
+
+    @media #{$small-only} {
+        min-height: rem-calc(690)
+    }
+}
+.car-discounts-container {
+    .disclaimer {
+        font-size: rem-calc(12);
+        line-height: rem-calc(14);
+    } 
+    .discounts-banner {
+        .round-label {
+            margin-top: rem-calc(35);
+            position: relative;
+            width: rem-calc(130);
+            height: rem-calc(130);
+            p {
+                top: 20%;
+                left: 22%;
+                position: absolute;
+                font-size: rem-calc(18);
+                line-height: rem-calc(20);
+                text-align: left;
+            }
+        }
+        @media #{$medium-up} {
+            .round-label {
+                margin-top: rem-calc(75);
+                position: relative;
+                width: 12.5rem;
+                height: 12.5rem;
+                p {
+                    top: 20%;
+                    left: 15%;
+                    position: absolute;
+                    font-size: rem-calc(36);
+                    line-height: rem-calc(30);
+                    text-align: left;
+                }
+            }
+        }
+        .red-pig {
+            width: rem-calc(200);
+        }
+        h1 {
+            margin-top: rem-calc(25);
+        }
+        @media #{$medium-up} {
+            h1 {
+                margin-top: rem-calc(65);
+            }
+            .red-pig {
+                max-width: rem-calc(300);
+                width: auto;
+            }
+        }
+        @media #{$medium-only} {
+            h1 {
+                font-size: rem-calc(54);
+            }
+        }
+        .i-dropdown:hover {
+            color: none;
+        }
+        @media #{$large-up} {
+            .red-pig {
+                padding-top: rem-calc(30);
+            }
+            h1 {
+                margin-top: rem-calc(42);
+            }
+        }
+       
+    }
+    .drive-plus-panel {
+        .speech-bubble {
+            display: table-cell;
+            position: relative;
+            vertical-align: middle;
+            @include icon-background("\e618",$red, rem-calc(210), "center");
+            .speech-bubble-text {
+                position: absolute;
+                left: 0;
+                top: 20%;
+                right: 0;
+                p {
+                    margin: 0;
+                    padding: 0;
+                    font-size: rem-calc(16);
+                    line-height: rem-calc(20);
+                    span {
+                        font-size: rem-calc(22);
+                        line-height: rem-calc(30);
+                    }
+                }
+            }
+        }
+        p {
+            &.disclaimer {
+                font-size: rem-calc(16);
+                line-height: rem-calc(18);
+            }
+        }
+        @media #{$medium-up} {
+            img {
+                margin-top: rem-calc(105);
+                margin-bottom: rem-calc(85);
+            }
+            .speech-bubble {
+                margin-bottom: rem-calc(85);
+            }
+        }
+    }
+    .together {
+            .disclaimer {
+                font-size: rem-calc(12);
+                line-height: rem-calc(14);
+            }     
+        @media #{$small-only} { 
+            min-height: 550px;
+            background: $cream url('/lib/img/together-discounts-hero-m.jpg') top center no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+            padding-top: rem-calc(35);
+            background-color: rgb(248,248,248);
+            h1 {
+                padding-bottom: 55px;
+            }
+            .text-wrapper {
+                padding-top: 300px;
+            }      
+        }
+        @media #{$medium-only} { 
+            min-height: 768px;
+            background: $cream url('/lib/img/together-discounts-hero-t.jpg') bottom center no-repeat; 
+            background-size: cover;
+            background-color: rgb(248,248,248);
+            h2 {
+                padding-bottom: 60px;
+            }
+            .text-wrapper {
+                padding-top: rem-calc(450);
+            }
+        }
+        @media #{$large-up} { 
+            min-height: 600px;
+            background: $cream url('/lib/img/together-discounts-hero-d.jpg') top center no-repeat;
+            background-size: auto;
+            background-color: rgb(248,248,248);
+            h1 {
+                padding-bottom: 25px;
+            }
+            h2 {
+                padding-bottom: 40px;
+            }
+            .text-wrapper {
+                // padding-top: rem-calc(30);
+                p {
+                    margin-bottom: 20px;
+                }
+            } 
+        }       
+    }
+    .extra-discounts {
+        display: none;
+        .i-car-circle {
+            font-size: 105px;
+            // padding-top: rem-calc(35);
+            // padding-bottom: rem-calc(35);
+        }
+        @media #{$medium-up} {
+            .discount-icon-wrapper-1 {
+                height: 350px;
+            }
+            .discount-icon-wrapper-2 {
+                height: 200px;
+            }
+            .discount-icon-wrapper-3 {
+                height: 650px;
+            }
+            .i-car-circle {
+                font-size: rem-calc(175);
+            }
+        }
+        h2 {
+            line-height: rem-calc(34);
+            margin-top: rem-calc(70);
+        }
+        @media #{$medium-up} {
+            h2 {
+                font-size: rem-calc(40);
+                line-height: rem-calc(50);
+                margin-top: rem-calc(70);
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,118 @@
+// PRIMARY BRAND COLOURS
+.green {
+    color: $green !important;
+}
+.white {
+    color: $white !important;
+}
+.red {
+    color: $red !important;
+}
+.black {
+    color: $black !important;
+}
+// SECONDARY BRAND COLOURS
+.red-light {
+    color: $red-light !important;
+}
+.red-dark {
+    color: $red-dark !important;
+}
+.red-brown {
+    color: $red-brown !important;
+}
+.grey-light {
+    color: $grey-light !important;
+}
+.orange {
+    color: $orange !important;
+}
+.blue {
+    color: $blue !important;
+}
+.yellow {
+    color: $yellow !important;
+}
+.blue-light {
+    color: $blue-light !important;
+}
+.green-light {
+    color: $green-light !important;
+}
+.grey-middle {
+    color: $grey-middle !important;
+}
+.grey-dark {
+    color: $grey-dark !important;
+}
+.blue-lighter {
+    color: $blue-lighter !important;
+}
+.blue-lightest {
+    color: $blue-lightest !important;
+}
+//already declared above
+/*
+.black {
+    color: $black !important;
+}*/
+//BACKGROUND COLOURS
+.white-background {
+    background-color: $white !important;
+}
+.red-background {
+    background-color: $red !important;
+}
+.red-dark-background{
+    background-color: $red-dark !important; 
+}
+.red-brown-background{
+    background-color: $red-brown !important; 
+}
+.red-dark-background-medium-up {
+    @media #{$medium-up} {
+        background-color: $red-dark !important;
+    }
+}
+.red-brown-background {
+    background-color: $red-brown !important;
+}
+.green-background {
+    background-color: $green !important;
+}
+.grey-light-background {
+    background-color: $grey-light !important;
+}
+.grey-dark-bckground {
+    background-color: $grey-dark !important;
+}
+.green-background-medium-up {
+    @media #{$medium-up} {
+        background-color: $green !important;
+    }
+}
+.cream-background {
+    background-color: $cream !important;
+}
+.yellow-background {
+    background-color: $yellow !important;
+}
+.blue-background {
+    background-color: $blue !important;
+}
+.blue-light-background {
+    background-color: $blue-light !important;
+}
+.blue-lighter-background {
+    background-color: $blue-lighter !important;
+}
+.twitter-blue-bg {
+    background-color: $twitter-blue !important;
+}
+.facebook-blue-bg {
+    background-color: $facebook-blue !important;
+}
+.googleplus-red-bg {
+    $googleplus-red: #dd4b39;
+    background-color: $googleplus-red !important;
+}

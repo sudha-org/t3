@@ -1,0 +1,17 @@
+$i: 1;
+
+@each $item in $primary-colors {
+    .primary-bg-#{$i} {
+    	background-color: #{$item}!important;
+    }
+    $i: $i + 1;
+}  
+
+// reset counter
+$i: 1;
+@each $item in $secondary-colors {
+    .secondary-bg-#{$i} {
+    	background-color: #{$item}!important;
+    }
+    $i: $i + 1;
+}  

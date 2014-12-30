@@ -1,0 +1,41 @@
+.contact-us-container, .about-us-container {
+    .fixed-width-height {
+        @media #{$small-only} {
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media #{$medium-only} {
+            width: 65%;
+            min-height: 140px;
+        }
+        @media #{$large-up} {
+            width: 80%;
+            min-height: 140px;
+        }
+    }
+
+    .accordion:first-child {
+        border-top: 1px solid $grey-light;
+    }
+
+    .secondary-accordion {
+
+    $medium-grey: #dcdcdc;
+
+    .accordion:first-child {
+        border-top: 1px solid $medium-grey;
+    }
+
+        .accordion-navigation {
+            border-bottom: 1px solid $medium-grey;
+            .content {
+                margin: rem-calc(0);
+            }
+        }
+    }
+}    
+.contact-us-overview .accordion .accordion-navigation .content {
+    margin: 0;
+}
+

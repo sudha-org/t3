@@ -1,0 +1,85 @@
+.arrow-bottom-white {
+    @include triangle(bottom, 50%, $white, rem-calc(30));
+    border-bottom: 1px solid $grey-light;
+    &.no-border{
+        border: 0 none;
+    }
+}
+.arrow-bottom-light-blue {
+        @include triangle(bottom, 50%, $blue-lightest, rem-calc(30));
+        border-bottom: 1px solid $grey-light;
+        &.no-border{
+            border: 0 none;
+        }
+    }
+.arrow-bottom-white-medium-up {
+    @media #{$medium-up} {
+        @include triangle(bottom, 50%, $white, rem-calc(30));
+        border-bottom: 1px solid $grey-light;
+        &.no-border{
+            border: 0 none;
+        }
+    }
+}
+.arrow-bottom-green {
+    @include triangle(bottom, 50%, $green, rem-calc(30));
+}
+.arrow-right-green {
+    @include triangle(right, 50%, $green, rem-calc(30));
+}
+.arrow-bottom-yellow {
+    @include triangle(bottom, 50%, $yellow, rem-calc(30));
+}
+.arrow-top-red {
+    @include triangle(top, 50%, $red, rem-calc(30));
+}
+.arrow-bottom-red {
+    @include triangle(bottom, 50%, $red, rem-calc(30));
+}
+.home-cover-type-arrow {
+    @include triangle(bottom, 50%, rem-calc(30));
+}
+/* .arrow-bottom-grey {
+    @include triangle(bottom, 50%, $grey-light, rem-calc(30));
+} */
+
+.arrow-left-red-with-padding {
+    @include triangle(left, 50%, $red, rem-calc(30));
+    margin: 0 auto;
+}
+.arrow-down {
+    @include arrow(bottom, 50%, rem-calc(40), false);
+}
+.arrow-down-to-right {
+    @media #{$small-only} {
+        @include arrow(bottom, 50%, rem-calc(40), false);
+    }
+    @media #{$medium-up} {
+        @include arrow(right, 50%, rem-calc(40), false);
+    }
+}
+.arrow-down-to-left {
+    @media #{$small-only} {
+        @include arrow(bottom, 50%, rem-calc(40), false);
+    }
+    @media #{$medium-up} {
+        @include arrow(left, 50%, rem-calc(40), false);
+    }
+}
+
+.arrow-top-white-shadow {
+    background-color: $white;
+    @include arrow(top, 50%, rem-calc(40), true);
+}
+
+// Car - Get In Touch: Chat Arrows
+.arrow-bottom-red-small {
+    background-color: $red;
+    @include arrow(bottom, 10%, rem-calc(20px), false, 0);
+}
+.arrow-bottom-blue-small {
+    background-color: $blue;
+    @include arrow(bottom, 90%, rem-calc(20px), false, 0);
+}
+
+

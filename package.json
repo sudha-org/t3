@@ -1,0 +1,17 @@
+{
+  "name": "foundation-libsass-template",
+  "version": "0.0.1",
+  "devDependencies": {
+    "bless": "^3.0.3",
+    "grunt": "~0.4.1",
+    "grunt-bless": "^0.1.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-html-build": "~0.3.2",
+    "grunt-ie9-selector-counter": "0.0.1",
+    "grunt-sass": "~0.8.0",
+    "grunt-shell": "~0.7.0",
+    "grunt-stripmq": "~0.0.2",
+    "ie9-selector-counter": "0.0.4",
+    "node-sass": "~0.7.0"
+  }
+}

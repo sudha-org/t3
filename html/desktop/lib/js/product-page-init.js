@@ -1,0 +1,1 @@
+$('#product-nav-link').addClass('active init-active');

@@ -1,0 +1,14 @@
+#sitemap-wrapper {
+	h2 {
+		padding-bottom: rem-calc(20);
+	}
+	a {
+		display: block;
+		font-size: rem-cal(18);
+		padding-bottom: rem-calc(10);
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

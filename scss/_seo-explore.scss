@@ -1,0 +1,60 @@
+.complaints-container {
+
+	.dl-pencil-bg {
+
+		background-repeat: no-repeat;
+
+		@media #{$small-only} {
+			background-size: auto 100%;
+			background-image: url("/lib/img/banners/pencil-banner-m.jpg");
+			background-position: top right;
+			height: rem-calc(650);
+
+		}
+
+		@media #{$medium-up} {
+			
+			background-image: url("/lib/img/banners/pencil-banner-t.jpg");
+			background-position: top;
+			height: rem-calc(400);
+			
+		}
+	}
+}
+
+
+//banner images for travel explore over 65s page
+.travel-explore-container {
+
+	.over65 {
+		@media #{$small-only} { 
+			min-height: 630px;
+			background: #f9f9f9 url('/lib/img/banners/travel-over65-m.jpg') top center no-repeat;
+			background-size: cover;
+	
+		}
+		@media #{$medium-only} { 
+			min-height: 768px;
+			background: #f9f9f9 url('/lib/img/banners/travel-over65-t.jpg') bottom center no-repeat;	
+			background-size: cover;
+		}
+		@media #{$large-up} { 
+			min-height: 480px;
+			background: #f9f9f9 url('/lib/img/banners/travel-over65-d.jpg') top center no-repeat;
+			background-size: auto;
+		}	
+	}
+}
+
+//banner images for pet explore pages
+.pet-explore-container {
+
+	.nervous-cats-bg {
+		background-image: url("/lib/img/scaredy_cat_mobile.jpg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center center;
+		height: rem-calc(400);
+	}
+}
+

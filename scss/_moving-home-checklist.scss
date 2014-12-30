@@ -1,0 +1,24 @@
+.moving-home-checklist-container {
+    .small-pencil-bg {
+        background-image: url("/lib/img/pencil-header.png");
+        background-repeat: no-repeat;
+        background-size: auto 45%;
+        background-position: top center;
+    }
+    .header-custom-padding {
+        padding-top: rem-calc(325);
+        padding-bottom: rem-calc(70);
+    }
+    @media #{$large-up} {
+        .small-pencil-bg {
+            background-image: url("/lib/img/pencil-header.png");
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            background-position: top right;
+        }
+        .header-custom-padding {
+            padding-top: rem-calc(70);
+            padding-bottom: rem-calc(70);
+        }
+    }
+}

@@ -1,0 +1,190 @@
+#car-cover-levels-wrapper, #home-cover-levels-wrapper, #pet-cover-levels-wrapper, #travel-cover-levels-wrapper, #breakdown-cover-levels-wrapper, #life-cover-levels-wrapper {
+    .cover-title-content {
+        @media #{$small-only} {
+            min-height: rem-calc(300);
+        }
+        min-height: rem-calc(220);
+    }
+    .row.numbered-tabs {
+        margin-top: rem-calc(30);
+        margin-bottom: rem-calc(30);
+        .number-button{
+            text-decoration: none;
+            &.active {
+                color: $red;
+            }
+        }
+        .active-arrow {
+            @include arrow(bottom, 16.5%, rem-calc(40), true, rem-calc(-30));
+        }
+    }
+    .extra-large-icon-inner-wrapper {
+        margin-top: rem-calc(60);
+    }
+    h2 {
+        padding-bottom: rem-calc(20);
+    }
+    p {
+        font-size: rem-calc(20);
+    }
+    ul.feature-list > li {
+     &.crossed {
+        a {
+            color: $grey-light-mid !important;
+            cursor: default;
+            text-decoration: none;
+        }
+        > span {
+            &.red {
+                @media #{$small-up} {
+                    display: block;
+                }
+                @media #{$large-up} {
+                    display: inline;
+                }
+            }
+        }
+    }
+}
+.number-button {
+    outline: none;
+    background-color:transparent;
+ }
+}
+#home-cover-levels-wrapper .premier-background {
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $red;
+    h1 {
+        color: $white;
+        font-size: rem-calc(16);
+        line-height: rem-calc(18);
+        margin-bottom: rem-calc(25);
+        padding: 0;
+        @media #{$medium-up} {
+            font-size: rem-calc(50);
+            margin-bottom: rem-calc(55);
+            line-height: rem-calc(55);
+        }
+    }
+    p {
+        color: $white;
+        font-size: rem-calc(14);
+        line-height: rem-calc(20);
+        @media #{$medium-up} {
+            font-size: rem-calc(40);
+            line-height: rem-calc(45);
+            margin-bottom: rem-calc(55);
+        }
+    }
+    button, .button {
+     &.secondary {
+        border-color: $white;
+        font-size: rem-calc(22);
+        &.white-text {
+            color: $white;
+        }
+    }
+}
+@media #{$small-only} {
+    background-image: url("/lib/img/select-premium-insurance-m.jpg");
+    padding: rem-calc(60) 0;
+}
+@media #{$medium-up} {
+    background-image: url("/lib/img/select-premium-insurance-t.jpg");
+    padding: rem-calc(80) 0;
+}
+@media #{$large-up} {
+    background-image: url("/lib/img/select-premium-insurance-d.jpg");
+    padding: rem-calc(120) 0;
+}
+
+}
+/*#car-cover-levels-wrapper {
+ ul.feature-list {
+    &.tick-list li {
+             min-height: rem-calc(320);
+        }
+    }
+}*/
+.feature-list-wrapper.home-cover {
+    ul.feature-list {
+        li {
+            &.crossed {
+                background-image: none;
+                text-decoration: none;
+            }
+        }
+    }
+}
+#pet-cover-levels-wrapper .feature-list-wrapper, #travel-cover-levels-wrapper .feature-list-wrapper {
+    ul.feature-list {
+        li {
+            &.crossed {
+                background-position: left top;
+                text-decoration: none;
+                color: $grey-middle;
+            }
+        }
+    }
+}
+.cover-levels-overview {
+    .active {
+        color: $red;
+    }
+    .life {
+        .active {
+            color: $green;
+        }
+    }
+    .arrow-top {
+        @include arrow(bottom, 0%, rem-calc(40px), false, rem-calc(-1px));
+        background-color: $white;
+        @media #{$medium-up} {
+            background-color: $red;
+        }
+    }
+    .cover-type {
+        color: $white;
+        h2 {
+            color: $white;
+            line-height: 2rem;
+            @media #{$medium-up} {
+                font-size: 3.125rem;
+                line-height: 3.4275rem;
+            }
+        }
+        p {
+            font-size: rem-calc(14);
+            line-height: rem-calc(20);
+            @media #{$medium-up} {
+                font-size: rem-calc(22);
+                line-height: 2rem;
+            }
+
+        }
+    }
+    .cover-type-black {
+        color: $black;
+        h2 {
+            color: $black;
+            line-height: 2rem;
+            @media #{$medium-up} {
+                font-size: 3.125rem;
+                line-height: 3.4275rem;
+            }
+            span {
+                color: $white;
+            }
+        }
+        p {
+            font-size: rem-calc(14);
+            line-height: rem-calc(20);
+            @media #{$medium-up} {
+                font-size: rem-calc(22);
+                line-height: rem-calc(24);
+            }
+        }
+    }
+}

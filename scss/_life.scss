@@ -1,0 +1,65 @@
+.what-is-life-banner {
+	@media #{$small-up} {
+		background-image: url(/lib/img/banners/what-is-life-mobile.jpg);
+		min-height: rem-calc(800);
+		//background-position: center rem-calc(-150);
+		background-position: bottom center;
+		background-size: cover;
+
+		// @media (max-width: 560px) {
+		// 	background-position: center 0;
+		// }
+	}
+	@media #{$medium-up} {
+		background-image: url(/lib/img/banners/what-is-life-tablet.jpg);
+		min-height: rem-calc(650);	
+		// background-position: center 0;
+		background-position: bottom center;
+		background-size: cover;
+
+	}
+	@media #{$large-up} {
+		background-image: url(/lib/img/banners/what-is-life-desktop.jpg);
+		min-height: rem-calc(490);
+		background-position: top center;
+		background-color: #fafafa;
+		background-size: auto;
+	}
+	background-repeat: no-repeat;
+	//background-size: cover;
+}
+
+
+.why-buy-direct {
+
+	$custom-grey: #f9f9f9;
+
+	.arrow-bottom-custom-grey {
+
+		@media #{$small-only} {
+			@include triangle(bottom, 50%, $custom-grey, rem-calc(30));
+		}
+
+		@media #{$medium-up} {
+			@include triangle(bottom, 70px, $custom-grey, rem-calc(30));
+		}
+	}	
+	
+	.dl-umbrella-bg {
+
+		background-color: $custom-grey;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		background-position: bottom;
+	
+		@media #{$medium-only} {
+			background-image: url("/lib/img/dl-umbrella-t.jpg");
+			height: 700px;
+		}
+
+		@media #{$large-up} {
+			background-image: url("/lib/img/dl-umbrella-d.jpg");
+			height: 600px;
+		}
+	}
+}

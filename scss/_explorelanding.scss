@@ -1,0 +1,802 @@
+.home-explore {
+
+	.home-explore-column-height {
+
+		@media #{$small-up} {
+			height: 600px;
+		}
+
+		@media #{$medium-up} {
+			height: 700px;
+		}
+
+		@media #{$large-up} {
+			height: 340px;
+		}
+	}
+
+	@media #{$small-only} {
+
+		.home-woman-bg {
+			background-image: url("/lib/img/home-woman-m.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom;
+			height: 650px;
+		}
+
+		.subsidence-bg {
+			background-image: url("/lib/img/subsidence-d.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom center;
+		}
+
+		.wallpaint-bg {
+			background-image: url("/lib/img/wallpaint-m.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom;
+		}
+
+		.pencil-bg {
+			background-image: url("/lib/img/pencil-m.jpg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: bottom left;
+
+		}
+
+	}
+
+	@media #{$medium-only} {
+
+		.home-woman-bg {
+			background-image: url("/lib/img/home-woman-t.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom;
+			height: 700px;
+		}
+
+		.subsidence-bg {
+			background-image: url("/lib/img/subsidence-t.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom center;
+		}
+
+		.wallpaint-bg {
+			background-image: url("/lib/img/wallpaint-t.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom;
+		}
+
+		.pencil-bg {
+			background-image: url("/lib/img/pencil-t.jpg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: bottom left;
+
+		}
+
+	}
+
+	@media #{$large-up} {
+		.home-woman-bg {
+			background-image: url("/lib/img/home-woman-d.jpg");
+			background-repeat: no-repeat;
+			background-size: auto;
+			background-position: bottom;
+			height: 600px;
+			background-color: rgb(248,248,248);
+		}
+
+		.subsidence-bg {
+			background-image: url("/lib/img/subsidence-d.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom right;
+		}
+
+		.wallpaint-bg {
+			background-image: url("/lib/img/wallpaint-d.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom;
+		}
+
+		.pencil-bg {
+			background-image: url("/lib/img/pencil-d.jpg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: top;
+
+		}
+
+
+	}
+
+}
+.pet-explore {
+	.explore-banner {
+		background-image: url("/lib/img/banners/pet-explore-m.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 600px;
+		position: relative;
+		background-position: 50% 50%;
+		position: relative;
+		.play-icon {
+			left: rem-calc(80);
+			cursor: pointer;
+		}
+	}
+	.pet-explained {
+		background-image: url("/lib/img/banners/pet-insurance-explained-m.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center bottom;
+	}
+
+	.pet-healthcare {
+		background-image: url("/lib/img/pet-healthcare-m.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	.pooch-bg {
+		background-image: url("/lib/img/pooch-m.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 500px;
+		background-position: 75% 75%;
+	}
+
+	.betterpet-bg {
+		background-image: url("/lib/img/betterpet-m.jpg");
+		background-repeat: no-repeat;
+		background-position: center right;
+		background-size: contain;
+		height: 500px;
+	}
+
+	@media #{$medium-up} {
+		.explore-banner {
+			background-image: url("/lib/img/banners/pet-explore-t.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 600px;
+			background-position: 50% 50%;
+		}
+		.pet-explained {
+			background-image: url("/lib/img/banners/pet-insurance-explained-t.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-position: center center;
+		}
+
+		.pet-healthcare {
+			background-image: url("/lib/img/pet-healthcare-t.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;	
+		}
+
+		.pooch-bg {
+			background-image: url("/lib/img/pooch-t.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 700px;
+		}
+
+		.betterpet-bg {
+			background-image: url("/lib/img/betterpet-m.jpg");
+			background-repeat: no-repeat;
+			background-size: auto 100%;
+			height: 700px;
+		}
+	}
+
+	@media #{$large-up} {
+		.explore-banner {
+			background-image: url("/lib/img/banners/pet-explore-d.jpg");
+			background-repeat: no-repeat;
+			background-size: auto;
+			height: 600px;
+			background-position: bottom center;
+		}
+		.pet-explained {
+			background-image: url("/lib/img/banners/pet-insurance-explained-d.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: left top;
+		}
+		.pooch-bg {
+			background-image: url("/lib/img/pooch-d.jpg");
+		}
+		.pet-healthcare {
+			background-image: url("/lib/img/pet-healthcare-d.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+
+		.betterpet-bg {
+			background-image: url("/lib/img/betterpet-d.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 500px;
+			background-position-x: 20%;
+		}
+	}
+}
+
+.travel-explore {
+	.explore-banner {
+		background-image: url("/lib/img/banners/travel-explore-banner-m.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 600px;
+		background-position: 50% 50%;
+		.play-container {
+			position: relative;
+			height: 100%;
+			.play-icon {
+				left: rem-calc(80);
+				cursor: pointer;
+			}
+		}
+	}
+	.boy-with-ice-block {
+		background-image: url("/lib/img/boy-with-ice-block-bg-m.png");
+		background-position: center center;
+		background-size: cover;
+	}
+
+	.berries-bg {
+		background-image: url("/lib/img/berries-bg-m.png");
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	@media #{$medium-up} {
+		.explore-banner {
+			background-image: url("/lib/img/banners/travel-explore-banner-t.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 600px;
+			background-position: 50% 50%;
+		}
+		.boy-with-ice-block {
+			background-image: url("/lib/img/boy-with-ice-block-bg-t.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+		.berries-bg {
+			background-image: url("/lib/img/berries-bg-t.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: rem-calc(681);
+		}
+	}
+
+	@media #{$large-up} {
+		.explore-banner {
+			background-image: url("/lib/img/banners/travel-explore-banner-d.png");
+			background-repeat: no-repeat;
+			background-size: auto;
+			height: 600px;
+			background-position: bottom center;
+			background-color: rgb(248,248,248);
+		}
+		.boy-with-ice-block {
+			background-image: url("/lib/img/boy-with-ice-block-bg-d.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.berries-bg {		
+			background-image: url("/lib/img/berries-bg-d.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: rem-calc(681);
+			background-position: center center;
+		}
+
+	}
+}
+
+.car-explore {
+
+	.car-child-toy {
+		@media #{$small-only} {
+			background-image: url("/lib/img/car-child-toy-m.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			background-position: bottom center;
+			height: 600px;
+		}
+		@media #{$medium-only} {
+			background-image: url("/lib/img/car-child-toy-t.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			background-position: bottom center;
+			height: 700px;
+		}
+		@media #{$large-up} {
+			background-image: url("/lib/img/car-child-toy-d.jpg");
+			background-repeat: no-repeat;
+			background-size: auto 100%;
+			background-position: top;
+			background-color: rgb(248,248,248);
+		}
+	}
+
+	.car-sofa-home {
+		@media #{$small-only} {
+			background-image: url("/lib/img/jargon-buster-t.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			background-position: bottom center;
+		}
+		@media #{$medium-up} {
+			background-image: url("/lib/img/jargon-buster-t.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom center;
+		}
+	}
+
+	.car-person-phone {
+		@media #{$small-only} {
+			background-image: url("/lib/img/car-person-phone-d.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			background-position: bottom center;
+		}
+		@media #{$medium-up} {
+			background-image: url("/lib/img/car-person-phone-d.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom center;
+		}
+	}
+
+}
+
+
+
+.life-explore {
+    .man-and-child-bg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% bottom;
+        height: rem-calc(750);
+        @media #{$small-only}
+        {
+            background-image: url("/lib/img/life_cover_header_mobile.jpg");
+        }
+        @media #{$medium-only}
+        {
+            background-image: url("/lib/img/life_cover_header_tablet.jpg");
+        }
+        @media #{$large-up}
+        {
+            background-image: url("/lib/img/life_cover_header_desktop.jpg");
+            height: rem-calc(600);
+            background-size: auto;
+            background-color: rgb(250,250,250);
+        }
+    }
+    .dl-life-balloons-bg{
+    	background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: auto;
+        @media #{$small-only}
+        {
+            background-image: url("/lib/img/baloons_mobile.jpg");
+            background-size: cover;
+        }
+        @media #{$medium-only}
+        {
+            background-image: url("/lib/img/baloons_tablet.jpg");
+        }
+        @media #{$large-up}
+        {
+            background-image: url("/lib/img/baloons_desktop.jpg");
+        }
+    }
+    .assurance-vs-mortgage-bg{
+    	background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: auto;
+        @media #{$small-only}
+        {
+            background-image: url("/lib/img/ipad_mobile.jpg");
+            background-size: cover;
+        }
+        @media #{$medium-only}
+        {
+            background-image: url("/lib/img/ipad_tablet.jpg");
+        }
+        @media #{$large-up}
+        {
+            background-image: url("/lib/img/ipad_desktop.jpg");
+        }
+    }
+    .floating-baloon{
+    	position:absolute;
+    	// top:35%;
+    	top: 28%;
+    	right:41%;
+    	z-index: 98;
+    }
+}
+
+.select-explore {
+
+	@media #{$small-only} {
+
+		.select-room-bg {
+			background-image: url("/lib/img/high_value_mobile.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom center;
+			height: 700px;
+
+			// background-image: url("/lib/img/high_value_mobile.jpg");
+			// background-repeat: no-repeat;
+			// background-size: 100% auto;
+			// background-position: bottom center;
+			// height: 700px;
+		}
+
+		.second-home-bg {
+			background-image: url("/lib/img/second_home_tablet.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom center;
+		}
+
+	}
+
+	@media #{$medium-only} {
+
+		.select-room-bg {
+			background-image: url("/lib/img/high_value_tablet.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom center;
+			height: 700px;
+		}
+
+		.second-home-bg {
+			background-image: url("/lib/img/second_home_tablet.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom center;
+		}
+		
+	}
+
+	@media #{$large-up} {
+		.select-room-bg {
+			background-image: url("/lib/img/high_value_desktop.jpg");
+			background-repeat: no-repeat;
+			background-size: auto auto;
+			min-height: rem-calc(600);
+			background-position: center center;
+			background-color: #f9f5f4;
+		}
+
+		.second-home-bg {
+			background-image: url("/lib/img/second_home_desktop.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom center;
+		}
+	}
+
+
+}
+
+.breakdown-explore {
+
+	@media #{$small-only} {
+
+		.rescue-car-bg {
+			background-image: url("/lib/img/rescue-car-m.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom center;
+			height: 600px;
+		}
+
+		.rescue-boot-bg {
+			background-image: url("/lib/img/rescue-boot-m.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom center;
+			height: 600px;
+		}
+
+		.explore-rescue-car-bg {
+			background-image: url("/lib/img/car-rescue-bg-m.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom center;
+			height: 600px;
+			background-color: $total-black;
+		}
+
+	}
+
+	@media #{$medium-only} {
+
+		.rescue-car-bg {
+			background-image: url("/lib/img/rescue-car-t.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom center;
+			height: 700px;
+		}
+
+		.rescue-boot-bg {
+			background-image: url("/lib/img/rescue-boot-t.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom center;
+			height: 700px;
+
+		}
+
+		.explore-rescue-car-bg {
+			background-image: url("/lib/img/car-rescue-bg-t.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom center;
+			height: 700px;
+			background-color: $total-black;
+		}
+
+	}
+
+	@media #{$large-up} {
+
+		.rescue-car-bg {
+			background-image: url("/lib/img/rescue-car-d.jpg");
+			background-repeat: no-repeat;
+			background-size: auto auto;
+			min-height: rem-calc(600);
+			background-position: center center;
+			background-color: $total-black;
+		}
+
+		.rescue-boot-bg {
+			background-image: url("/lib/img/rescue-boot-d.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom center;
+			height: 700px;
+
+		}
+
+		.explore-rescue-car-bg {
+			background-image: url("/lib/img/rescue-car-d.jpg");
+			background-repeat: no-repeat;
+			background-size: auto auto;
+			min-height: rem-calc(600);
+			background-position: center center;
+			background-color: $total-black;
+		}
+	}
+}
+
+.vertical-container-wrapper {
+	display: table;
+}
+
+.vertical-element-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.explore-landing {
+
+   	.common-column-height {
+		@media #{$small-only} {
+			height: 600px;
+		}
+
+		@media #{$medium-only} {
+			height: 700px;
+		}
+
+		@media #{$large-up} {
+			height: 800px;
+		}
+	}
+
+	.common-column-height-medium-down {
+
+		@media #{$small-up} {
+			height: 600px;
+		}
+
+		@media #{$medium-up} {
+			height: 700px;
+		}
+
+		@media #{$large-up} {
+			height: 500px;
+		}
+	}
+}
+
+.wolf-content {
+
+
+
+	@media #{$small-only} {
+
+		.wolf-traffic-bg {
+			background-image: url("/lib/img/wolf-traffic-m.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom left;
+
+		}
+
+		.wolf-break-in-bg {
+			background-image: url("/lib/img/wolf-break-in-m.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom left;
+
+		}
+
+		.wolf-fire-bg {
+			background-image: url("/lib/img/wolf-fire-m.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom left;
+
+		}
+
+		.wolf-write-off-bg {
+			background-image: url("/lib/img/wolf-write-off-m.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom left;
+
+		}
+		
+
+	}
+
+	@media #{$medium-only} {
+
+		.wolf-traffic-bg {
+			background-image: url("/lib/img/wolf-traffic-t.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom left;
+
+		}
+
+		.wolf-break-in-bg {
+			background-image: url("/lib/img/wolf-break-in-t.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom left;
+
+		}
+
+		.wolf-fire-bg {
+			background-image: url("/lib/img/wolf-fire-t.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom left;
+
+		}
+
+		.wolf-write-off-bg {
+			background-image: url("/lib/img/wolf-write-off-t.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom left;
+
+		}
+
+	}
+
+	@media #{$large-up} {
+
+		.wolf-traffic-bg {
+			background-image: url("/lib/img/wolf-traffic-d.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: top;
+
+		}
+
+		.wolf-break-in-bg {
+			background-image: url("/lib/img/wolf-break-in-d.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: top;
+
+		}
+
+		.wolf-fire-bg {
+			background-image: url("/lib/img/wolf-fire-d.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: top;
+
+		}
+
+		.wolf-write-off-bg {
+			background-image: url("/lib/img/wolf-write-off-d.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: top;
+
+		}
+
+
+	}
+
+	.vertical-container-wrapper {
+		display: table;
+	}
+
+	.vertical-element-wrapper {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+   	.common-column-height {
+		@media #{$small-only} {
+			height: 600px;
+		}
+
+		@media #{$medium-only} {
+			height: 700px;
+		}
+
+		@media #{$large-up} {
+			height: 682px;
+		}
+	}
+
+	.common-column-height-medium-down {
+
+		@media #{$small-up} {
+			height: 600px;
+		}
+
+		@media #{$medium-up} {
+			height: 700px;
+		}
+
+		@media #{$large-up} {
+			height: 500px;
+		}
+	}
+	.seven-day-repair{
+		@media #{$small-up} {
+			height: rem-calc(600);
+			background-image: url("/lib/img/banners/7day-image-mobile.jpg");
+		}
+		@media #{$medium-up} {
+			background-image: url("/lib/img/banners/7day-image.jpg");
+			height: rem-calc(432);
+		}
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top;
+	}
+
+}

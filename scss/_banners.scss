@@ -1,0 +1,321 @@
+.banner {
+
+	// 
+	// Banners for HOME
+	// 
+	.contents & {
+		background: #f5f5f5;
+	}
+
+	// 
+	// Banners for media
+	// 
+	.media & {
+		@media #{$small-only} { 
+			min-height: 542px;
+			background: #f8f8f8 url('/lib/img/banners/media-centre-m.jpg') top center no-repeat;
+			background-size: contain;
+			// padding-top: rem-calc(190);
+			@media #{$landscape} { 
+				// padding-top: rem-calc(220) !important;
+			}			
+		}
+		@media #{$medium-only} { 
+			min-height: 768px;
+			background: #f8f8f8 url('/lib/img/banners/media-centre-t.jpg') bottom center no-repeat;	
+			background-size: cover;
+		}
+		@media #{$large-up} { 
+			min-height: 490px;
+			background: #f8f8f8 url('/lib/img/banners/media-centre-d.jpg') top center no-repeat;
+			background-size: auto;
+		}		
+	}
+
+	// 
+	// Banners for together
+	// 
+	.together & {
+		@media #{$small-only} { 
+			min-height: 629px;
+			background: #f8f8f8 url('/lib/img/together-hero-m.jpg') top center no-repeat;
+			background-size: contain;
+			// padding-top: rem-calc(190);
+			@media #{$landscape} { 
+				// padding-top: rem-calc(220) !important;
+			}			
+		}
+		@media #{$medium-only} { 
+			min-height: 768px;
+			background: #f8f8f8 url('/lib/img/together-hero-t.jpg') bottom center no-repeat;	
+			background-size: cover;
+		}
+		@media #{$large-up} { 
+			min-height: 490px;
+			background: #f8f8f8 url('/lib/img/together-hero-d.jpg') top center no-repeat;
+			background-size: auto;
+		}		
+	}
+
+
+	.driveplus-discount & {
+		@media #{$small-only} { 
+			background: $cream;
+			padding-top: rem-calc(80);
+			
+		}
+		@media #{$medium-only} { 
+			min-height: 768px;
+			background: $cream url('/lib/img/driveplus-discount-t.jpg') bottom center no-repeat;	
+			background-size: cover;
+		}
+		@media #{$large-up} { 
+			min-height: 490px;
+			background: $cream url('/lib/img/driveplus-discount-d.jpg') top center no-repeat;
+			background-size: cover;
+		}		
+	}
+
+
+
+	
+	// 
+	// Banners for LIFE / EXPLORE
+	// 
+	.needs-change & {
+		@media #{$small-only} { 
+			min-height: 640px;
+			background: #b6d323 url('/lib/img/banners/life-explore-needs-change-m.jpg') top center no-repeat;
+			background-size: contain;
+			padding-top: rem-calc(190);
+			@media #{$landscape} { 
+				padding-top: rem-calc(220) !important;
+			}			
+		}
+		@media #{$medium-only} { 
+			min-height: 768px;
+			background: #b6d323 url('/lib/img/banners/life-explore-needs-change-t.jpg') bottom center no-repeat;	
+			background-size: cover;
+		}
+		@media #{$large-up} { 
+			min-height: 490px;
+			background: #b6d323 url('/lib/img/banners/life-explore-needs-change-d.jpg') top center no-repeat;
+			background-size: cover;
+		}		
+	}
+
+	// Single or Joint
+	.singlejoint & {
+		@media #{$small-only} { 
+			min-height: 600px;
+			background: $white url('/lib/img/banners/life-singlejoint-top-m.jpg') bottom center no-repeat;
+			background-size: contain;
+		}
+		@media #{$medium-only} { 
+			min-height: 640px;
+			background: $white url('/lib/img/banners/life-singlejoint-top-t.jpg') bottom center no-repeat;
+			
+			& .floating-balloon{
+				position: relative;
+				bottom: -130px;
+				left: -15%;
+			}		
+		}
+		@media #{$large-up} { 
+			max-height: 480px;
+			background: $white url('/lib/img/banners/life-singlejoint-top-d.jpg') bottom center no-repeat;
+
+			& .floating-balloon{
+				position: relative;
+				bottom: 60px;
+				left: 3%;
+			}
+		}	
+	}
+
+
+
+	// 
+	// Banners for SELECT / COVER LEVELS 
+	// 
+	.select-cover-options & {
+
+
+		&.select-options-container {
+			background-color: #dc0814;	//red	
+		}
+
+		.content {
+			display: table-cell;
+			vertical-align: middle;
+			height: 600px;
+		}
+
+		@media #{$small-only} { 
+			@for $i from 0 through 2 {
+				.slide-#{$i} {
+				min-height: 640px;
+				background: transparent url('/lib/img/banners/select-cover-options-#{$i}-m.jpg') bottom center no-repeat;
+				background-size: cover;
+				}
+			}
+		}
+		@media #{$medium-only} { 
+			@for $i from 0 through 2 {
+				.slide-#{$i} {
+				min-height: 660px;
+				background: transparent url('/lib/img/banners/select-cover-options-#{$i}-t.jpg') bottom center no-repeat;
+				background-size: cover;
+				}
+			}
+		}
+		@media #{$large-up} { 
+			@for $i from 0 through 2 {
+				.slide-#{$i} {
+				height: 660px;
+				background: transparent url('/lib/img/banners/select-cover-options-#{$i}-d.jpg') bottom center no-repeat;
+				}
+			}				
+		}
+	}
+
+
+	// 
+	// Banners for SELECT / EXPLORE 
+	// 
+	
+	.high-value-home & {
+		@media #{$small-only} { 
+			min-height: 640px;
+			background: $cream url('/lib/img/banners/select-hival-home-m.jpg') bottom center no-repeat;
+			background-size: cover;
+		}
+
+		@media #{$medium-only} { 
+			min-height: 768px;
+			background: $cream url('/lib/img/banners/select-hival-home-t.jpg') bottom center no-repeat;	
+			background-size: cover;
+		}
+
+		@media #{$large-up} { 
+			min-height: 490px;
+			background: rgb(249,245,244) url('/lib/img/banners/select-hival-home-d.jpg') center no-repeat;
+		}				
+	}
+
+	.high-value-individual & {
+		@media #{$small-only} { 
+			min-height: 446px;
+			background: $cream url('/lib/img/banners/select-hival-ind-m.jpg') bottom center no-repeat;
+			background-size: cover;
+		}
+
+		@media #{$medium-only} { 
+			min-height: 666px;
+			background: $cream url('/lib/img/banners/select-hival-ind-t.jpg') bottom center no-repeat;	
+			background-size: cover;
+		}
+
+		@media #{$large-up} { 
+			min-height: 500px;
+			background: #fafafa url('/lib/img/banners/select-hival-ind-d.jpg') center no-repeat;
+		}				
+	}
+	
+}
+
+.driveplus-content-container {
+    // h1 {
+    //     font-size: rem-calc(32);
+    //     line-height: rem-calc(34);
+    // }
+    // @media #{$medium-up} {
+    //     h1 {
+    //         font-size: rem-calc(50);
+    //         line-height: rem-calc(54);
+    //     }
+    // }
+    // .terms-and-conditions {
+    //     font-size: rem-calc(10);
+    //     line-height: rem-calc(15);
+    // }
+    .driveplus-banner-container {
+        background-image: url("/lib/img/driveplus-header-m.jpg");
+        background-position-x: center;
+        background-position-y: 15%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        // h1 {
+        //     margin-bottom: rem-calc(250);
+        //     font-size: rem-calc(27);
+        //     line-height: rem-calc(32);
+        // }
+		
+        h2 {
+        	margin-top: rem-calc(30);
+        }		
+        	
+
+        p {
+            // margin-top: rem-calc(25);
+            color: $black;
+            font-size: rem-calc(10);
+            line-height: rem-calc(15);
+        }
+
+        @media #{$small-only} {
+			a {
+				margin-top: rem-calc(350);
+				margin-bottom: rem-calc(100);
+			}
+        }
+
+        @media #{$medium-up} {
+            min-height: rem-calc(665);
+            background: #fdfdfd url('/lib/img/driveplus-header-t.jpg') bottom center no-repeat;
+            background-size: cover;
+            h1 {
+                margin-bottom: rem-calc(350);
+                font-size: rem-calc(50);
+                line-height: rem-calc(54);
+            }
+
+            h3 {
+        	margin-top: rem-calc(265);
+        }
+        }
+        @media #{$large-up} {
+            min-height: rem-calc(600);
+            background: #fdfdfd url('/lib/img/driveplus-header-d.jpg') bottom center no-repeat;
+            background-position: center;
+            background-position-y: 0;
+            background-size: auto;
+       		
+       		h3 {
+        	margin-top: rem-calc(145);
+        	}
+        }
+    }
+}
+.about-us-container {
+	.about-us-banner {
+		background-color: rgb(248,248,248);	
+		background-image: url("/lib/img/banners/about-us-banner-m.jpg");
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 550px;
+		@media #{$medium-up} {
+			background-image: url("/lib/img/banners/about-us-banner-t.jpg");
+			height: 765px;
+		}
+		@media #{$large-up} {
+			background-image: url("/lib/img/banners/about-us-banner-d.jpg");
+			background-position: center center;
+			background-size: auto;
+			height: 480px;
+		}
+	}
+}
+
+

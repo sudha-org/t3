@@ -1,0 +1,48 @@
+.seo-template-page-container {
+
+	.seo-simple-text-container {
+		@include triangle (bottom, 50%, $white, rem-calc(30));
+		z-index: 999;	
+	}
+
+
+    .seo-promo-panel-container {
+
+    	.seo-optional-promos-container {
+    		background: url("/lib/img/seo-promo-panel-1.png");
+            background-repeat: no-repeat;
+        	background-position: top center;
+        	background-size: cover;
+            height: 500px;
+        	position: relative;
+
+            .seo-promo-text-panel {
+            position: absolute;
+            bottom: 5%;
+            left: 20%;
+            right: 20%;
+            }
+
+    	}
+
+        .seo-optional-promo-2-container {
+            background: url("/lib/img/seo-promo-panel-2.png");
+            background-repeat: no-repeat; 
+            background-position: top center;
+            background-size: cover;
+            height: 500px;
+            position: relative; 
+
+            .seo-promo-text-panel {
+            position: absolute;
+            left: 20%;
+            right: 20%;
+            bottom: 5%;
+            }
+        }
+
+
+    }
+
+
+}

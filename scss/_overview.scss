@@ -1,0 +1,1303 @@
+.car-content-container {
+    .banner-container {
+        min-height: rem-calc(580); 
+        h1 {
+            padding-bottom: 0;
+            margin-bottom: 20px;
+        }
+        h4 {
+            font-size: 16px;
+        }
+        img {
+            margin: 0 auto;
+        }
+        p.disclaimer { 
+            font-size: rem-calc(12);
+            line-height: rem-calc(14);
+        }
+        @media #{$small-only} {
+            .button {
+               width: 100%;
+            }
+        }
+    
+    @media #{$medium-up} {
+        
+            min-height: rem-calc(665);
+            h4 {
+                font-size: 18px;
+            }
+            .no-padding {
+                padding-left: rem-calc(12);
+                padding-right: rem-calc(12);
+            }
+            
+        
+    }
+    @media #{$large-up} {
+        
+            min-height: rem-calc(725);
+            .no-padding {
+                padding: rem-calc(10) rem-calc(22);
+            }
+        }
+    }
+
+    .harvey-spot {
+        .harvey-content-container {
+            h1 {
+                padding-bottom: rem-calc(10);
+                font-size: rem-calc(40);
+            }
+            h2 {
+                font-size: rem-calc(30);
+                line-height: rem-calc(34);
+            }
+            p {
+                font-size: rem-calc(16);
+                line-height: rem-calc(16);
+            }
+        }
+        @media #{$large-up} {
+            padding-left: rem-calc(90);
+            height: rem-calc(470);
+            background-image: url("/lib/img/banners/harvey-bg.jpg");
+            background-position: bottom left;
+            background-repeat: no-repeat;
+        }
+    }
+    .non-uk-content {
+        .non-uk-content-container {
+            h1 {
+                padding-bottom: rem-calc(10);
+                font-size: rem-calc(40);
+            }
+            h2 {
+                font-size: rem-calc(30);
+                line-height: rem-calc(34);
+            }
+            p {
+                font-size: rem-calc(16);
+                line-height: rem-calc(16);
+            }
+        }
+        @media #{$large-up} {
+            padding-left: rem-calc(90);
+            height: rem-calc(470);
+            background-image: url("/lib/img/car-non-uk.png");
+            background-position: center left;
+            background-repeat: no-repeat;
+        }
+    }
+    .video-left-panel {
+        .driveplus-discount {
+            p {
+                font-size: rem-calc(16);
+                line-height: rem-calc(18);
+            }
+        }
+    }
+    .bg-mini {
+        background-image: url("/lib/img/dl-mini.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        display: table;
+        padding-bottom: rem-calc(100px);
+        padding-top: rem-calc(100px);
+        position: relative;
+        .speech-bubble {
+            display: table-cell;
+            position: relative;
+            vertical-align: middle;
+            @include icon-background("\e618",$white, rem-calc(175px), "center");
+            .speech-bubble-text {
+                position: absolute;
+                left: 0;
+                top: 28%;
+                right: 0;
+                h2 {
+                    margin: 0;
+                    padding: 0;
+                    font-size: rem-calc(24);
+                    line-height: 1.25;
+                }
+            }
+        }
+    }
+    .carousel {
+        .slick-slide {
+            height: 500px;
+        }
+        @media #{$large-up} {
+            .slick-slide {
+                height: 430px;
+            }
+        }
+    }
+    .terms-and-conditions {
+        font-size: rem-calc(16);
+        line-height: rem-calc(18);
+    }
+
+    @media #{$medium-up} {
+        .bg-mini {
+            padding-bottom: rem-calc(150px);
+            padding-top: rem-calc(150px);
+            background-size: auto;
+            .speech-bubble {
+                @include icon-background("\e618",$white, rem-calc(300px), center);
+                .speech-bubble-text {
+                    top: 25%;
+                    left: 5%;
+                    h2 {
+                        line-height: rem-calc(35);
+                        font-size: rem-calc(30);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.home-content-container {
+    .terms-and-conditions {
+        font-size: rem-calc(16);
+        line-height: rem-calc(18);
+    }
+    .home-banner-container {
+        background-image: url("/lib/img/banners/home-overview-banner-m.jpg");
+        background-position-x: center;
+        background-position-y: 15%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        h1 {
+            margin-bottom: rem-calc(250);
+            font-size: rem-calc(27);
+            line-height: rem-calc(32);
+        }
+        p {
+            margin-top: rem-calc(25);
+            color: $white;
+            font-size: rem-calc(16);
+            line-height: rem-calc(15);
+        }
+        @media #{$medium-up} {
+            min-height: rem-calc(665);
+            background-image: url("/lib/img/banners/home-overview-banner-t.jpg");
+            background-size: auto;
+            h1 {
+                margin-bottom: rem-calc(350);
+                font-size: rem-calc(50);
+                line-height: rem-calc(54);
+            }
+        }
+        @media #{$large-up} {
+            min-height: rem-calc(725);
+            background-image: url("/lib/img/banners/home-overview-banner-d.jpg");
+            background-position: center center;
+            background-size: auto;
+            h1 {
+                margin-bottom: rem-calc(400);
+            }
+        }
+    }
+    .harvey-spot {
+        .harvey-content-container {
+            h1 {
+                padding-bottom: rem-calc(10);
+                font-size: rem-calc(40);
+            }
+            h2 {
+                font-size: rem-calc(30);
+                line-height: rem-calc(34);
+            }
+            p {
+                font-size: rem-calc(16);
+                line-height: rem-calc(16);
+            }
+        }
+        @media #{$large-up} {
+            padding-left: rem-calc(90);
+            height: rem-calc(470);
+            background-image: url("/lib/img/banners/harvey-bg.jpg");
+            background-position: bottom left;
+            background-repeat: no-repeat;
+        }
+    }
+    .fridge-spot {
+        .fridge-content-container {
+            h1 {
+                padding-bottom: rem-calc(10);
+            }
+            h2 {
+                line-height: rem-calc(34);
+            }
+            p {
+                line-height: rem-calc(16);
+            }
+        }
+        @media #{$large-up} {
+            padding-left: rem-calc(55);
+            height: rem-calc(470);
+            background-image: url("/lib/img/fridge-desktop.png");
+            background-position: bottom left;
+            background-repeat: no-repeat;
+        }
+    }
+    .select-premier {
+        background-position: bottom center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        .arrow-down-no-shadow {
+            background-color: inherit;
+            background-image: inherit;
+            background-position: inherit;
+        }
+        @media #{$small-only} {
+            background-image: url("/lib/img/select-premium-insurance-m.jpg");
+        }
+        @media #{$medium-up} {
+            background-image: url("/lib/img/select-premium-insurance-t.jpg");
+        }
+        @media #{$large-up} {
+            background-color: rgb(220,8,22);
+            background-image: url("/lib/img/select-premium-insurance-d.jpg");
+        }
+    }
+}
+.pet-overview-container {
+    .speech-bubble-carousel {
+        @include icon-background("\e618", $red, rem-calc(200px), "center");
+        //margin-top: rem-calc(90px);
+
+        position: relative;
+        vertical-align: middle;
+        .speech-bubble-carousel-text {
+            position: absolute;
+            top: 25%;
+            //font-size: 1.5rem;
+            left: 25%;
+            //line-height: 2rem;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            width: 50%;
+            strong {
+                font-size: 250%;
+            }
+        }
+    }
+    .pet-banner-container {
+        min-height: rem-calc(580);
+        background-color: rgb(251,250,248);
+        background-image: url("/lib/img/banners/pet-overview-banner-m.jpg");
+        background-position: top center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        h1 {
+            margin-bottom: rem-calc(250);
+            font-size: rem-calc(32);
+            line-height: rem-calc(34);
+        }
+        p {
+            margin-top: rem-calc(25);
+            font-size: rem-calc(16);
+            line-height: rem-calc(18);
+        }
+        @media #{$medium-up} {
+            min-height: rem-calc(665);
+            background-image: url("/lib/img/banners/pet-overview-banner-d.jpg");
+            background-position: center center;
+            background-size: auto;
+            h1 {
+                margin-bottom: rem-calc(350);
+                font-size: rem-calc(50);
+                line-height: rem-calc(54);
+            }
+            p {
+                margin-top: 0;
+                font-size: rem-calc(16);
+            line-height: rem-calc(18);
+            }
+        }
+        @media #{$large-up} {
+            min-height: rem-calc(725);
+            h1 {
+                margin-bottom: 0;
+            }
+            .banner-right {
+                margin-bottom: rem-calc(195);
+                .speech-bubble-pet {
+                    @include icon-background("\e618", $red, rem-calc(200px), "center");
+
+                    position: relative;
+                    vertical-align: middle;
+                    .speech-bubble-text-big {
+                        position: absolute;
+                        top: 22%;
+                        left: 25%;
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                        width: 50%;
+                        font-size: rem-calc(55);
+                        line-height: 1.5rem;
+                    }
+                    .speech-bubble-text {
+                        position: absolute;
+                        top: 45%;
+                        left: 25%;
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                        width: 50%;
+                        font-size: 1.5rem;
+                        line-height: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .icon-tick-list-pet {
+        p {
+            display: table;
+        }
+        img {
+            position: relative;
+            display: inline;
+            float: left;
+            margin: 0;
+            padding: 0;
+            width: rem-calc(25);
+        }
+    }
+    .vertical-container-wrapper {
+        display: table;
+    }
+    .vertical-element-wrapper {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .car-dog-bg {
+        height: 500px;
+        background-image: url("/lib/img/car-dog-m.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .pet-styled-carousel {
+        .slick-prev:before, .slick-next:before {
+            color: $total-black;
+        }
+    }
+    .dl-teapot-bg {
+        @media #{$medium-only} {
+            height: 510px;
+            background-image: url("/lib/img/dl-teapot-mobile.jpg");
+            background-position: bottom right;
+            background-repeat: no-repeat;
+        }
+        @media #{$large-up} {
+            height: 510px;
+            background-image: url("/lib/img/dl-teapot-mobile.jpg");
+            background-position: bottom right;
+            background-repeat: no-repeat;
+        }
+    }
+    @media #{$medium-up} {
+        .car-dog-bg {
+            height: 580px;
+        }
+        .column-height-set {
+            height: 580px;
+        }
+    }
+    @media #{$large-up} {
+        .car-dog-bg {
+            height: 660px;
+        }
+        .column-height-set {
+            height: 660px;
+        }
+    }
+}
+.travel-content-container {
+    .travel-styled-carousel {
+        @media #{$small-only} {
+            .slick-prev, .slick-next {
+                top: 20%;
+            }
+        }
+        @media #{$medium-only} {
+            .slick-prev, .slick-next {
+                top: 32%;
+            }
+        }
+        .slick-prev:before, .slick-next:before {
+            color: $red;
+        }
+    }
+    .slick-slide {
+        p {
+            font-size: rem-calc(20);
+        }
+        img {
+            width: 50%;
+        }
+        .speech-bubble {
+            .speech-bubble-text {
+                top: 30%;
+            }
+        }
+        @media #{$medium-up} {
+            .speech-bubble {
+                margin-top: rem-calc(130);
+                margin-left: 0;
+                .speech-bubble-text {
+                    top: 30%;
+                    width: 101%;
+                }
+            }
+            img {
+                margin-top: 50%;
+                width: 100%;
+            }
+        }
+        @media #{$large-up} {
+            .speech-bubble {
+                .speech-bubble-text {
+                }
+            }
+        }
+    }
+    .feature-list-wrapper {
+        .icon-tick-list-travel {
+            p {
+                margin-bottom: 0;
+                font-size: rem-calc(20);
+            }
+            p:before {
+                color: $green;
+                content: "\e61f";
+                vertical-align: middle;
+                font-size: rem-calc(30);
+                font-family: "DL-icons";
+            }
+        }
+    }
+    .travel-banner-container {
+        min-height: rem-calc(580);
+        background-image: url("/lib/img/banners/travel_overview_header_image_mobile.jpg");
+        background-position-x: center;
+        background-position-y: -40%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        h1 {
+            margin-bottom: rem-calc(250);
+            font-size: rem-calc(32);
+            line-height: rem-calc(34);
+        }
+        p {
+            margin-top: rem-calc(25);
+            color: $white;
+            font-size: rem-calc(10);
+            line-height: rem-calc(15);
+        }
+        @media #{$landscape} {
+            background-position-y: 40%;
+        }
+        @media #{$medium-up} {
+            min-height: rem-calc(665);
+            background-image: url("/lib/img/banners/travel_overview_header_image_tablet.jpg");
+            background-position: center center;
+            h1 {
+                margin-bottom: 20rem;
+                font-size: rem-calc(50);
+                line-height: rem-calc(54);
+            }
+        }
+        @media #{$large-up} {
+            min-height: rem-calc(725);
+            background-color: rgb(250,250,250);
+            background-image: url("/lib/img/banners/travel_overview_header_image_desktop.jpg");
+            background-position: center center;
+            background-size: auto;
+            h1 {
+                margin-bottom: rem-calc(400);
+            }
+        }
+    }
+    .trip-covered {
+        min-height: rem-calc(665);
+        h1 {
+            margin-bottom: rem-calc(360);
+        }
+    }
+    .cover-levels-overview {
+        position: relative;
+    }
+    .cover-level-overview-1, .cover-level-overview-2, .cover-level-overview-3 {
+        min-height: rem-calc(500);
+        background-position: bottom center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .arrow-down-no-shadow {
+            background-color: inherit;
+            background-image: inherit;
+            background-position: inherit;
+        }
+        .arrow-top {
+            background-image: inherit;
+            background-position: top center;
+            /*@media #{$small-only} {
+                background-position: bottom center;
+            }
+            @media #{$medium-only}{
+                background-position: center top;
+            }
+            @media #{$large-up}{
+                background-position: center top;
+            }*/
+        }
+    }
+    .cover-level-overview-1 {
+        background-color: rgb(220,201,159);
+        .speech-bubble:before {
+            content: "\e654";
+        }
+        @media #{$medium-only} {
+            background-position: center center;
+            .arrow-down-no-shadow {
+                background-position: bottom center;
+            }
+        }
+        @media #{$small-only} {
+            background-position: bottom center;
+            /*.arrow-down-no-shadow{
+                background-position: bottom center;
+            }*/
+        }
+    }
+    .cover-level-overview-3 {
+        color: $black !important;
+        h2, p {
+            color: $black !important;
+        }
+    }
+    .cover-level-overview-1, .cover-level-overview-1 .arrow-top {
+        //background-image: url("/lib/img/banners/travel_overview_single_mobile.jpg");
+        @media #{$small-only} {
+            background-image: url("/lib/img/banners/travel_overview_single_mobile.jpg");
+        }
+        @media #{$medium-only} {
+            background-image: url("/lib/img/banners/travel_overview_single_tablet.jpg");
+            background-position: top left;
+        }
+        @media #{$large-up} {
+            background-image: url("/lib/img/banners/travel_overview_single_desktop.jpg");
+            background-size: auto;
+        }
+    }
+    .cover-level-overview-2, .cover-level-overview-2 .arrow-top {
+        //background-image: url("/lib/img/banners/travel_overview_multi_mobile.jpg");
+        @media #{$small-only} {
+            background-image: url("/lib/img/banners/travel_overview_multi_mobile.jpg");
+        }
+        @media #{$medium-only} {
+            background-image: url("/lib/img/banners/travel_overview_multi_tablet.jpg");
+        }
+        @media #{$large-up} {
+            background-color: rgb(248,248,248);
+            background-image: url("/lib/img/banners/travel_overview_multi_desktop.jpg");
+            background-size: auto;
+        }
+    }
+    .cover-level-overview-3, .cover-level-overview-3 .arrow-top {
+        //background-image: url("/lib/img/banners/travel_overview_discover_mobile.jpg");
+        @media #{$small-only} {
+            background-image: url("/lib/img/banners/travel_overview_discover_mobile.jpg");
+        }
+        @media #{$medium-only} {
+            background-image: url("/lib/img/banners/travel_overview_discover_tablet.jpg");
+        }
+        @media #{$large-up} {
+            background-color: rgb(220,201,159);
+            background-image: url("/lib/img/banners/travel_overview_discover_desktop.jpg");
+            background-size: auto;
+        }
+    }
+    .key-benefits {
+        background-image: url("/lib/img/banners/travel_overview_optional_extras_bg_mobile.jpg");
+        background-position: 50% bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /*min-height: rem-calc(665);*/
+        @media #{$small-only} {
+            padding-bottom: rem-calc(400);
+            background-image: url("/lib/img/banners/travel_overview_optional_extras_bg_mobile.jpg");
+        }
+        @media #{$medium-only} {
+            background-image: url("/lib/img/banners/travel_overview_optional_extras_bg_tablet.jpg");
+        }
+        @media #{$large-up} {
+            background-image: url("/lib/img/banners/travel_overview_optional_extras_bg_desktop.jpg");
+            background-position: 55% bottom;
+        }
+    }
+    .good-to-know {
+        /*min-height: rem-calc(500); */
+        background:    -moz-linear-gradient(top,  #f4d4e3 0%, #f8e7f1 50%, #fcf1f9 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4d4e3), color-stop(50%,#f8e7f1), color-stop(100%,#fcf1f9)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #f4d4e3 0%,#f8e7f1 50%,#fcf1f9 100%); /* Chrome10+,Safari5.1+ */
+        background:      -o-linear-gradient(top,  #f4d4e3 0%,#f8e7f1 50%,#fcf1f9 100%); /* Opera 11.10+ */
+        background:     -ms-linear-gradient(top,  #f4d4e3 0%,#f8e7f1 50%,#fcf1f9 100%); /* IE10+ */
+        background:         linear-gradient(to bottom,  #f4d4e3 0%,#f8e7f1 50%,#fcf1f9 100%); /* W3C */
+        background-color: #fadae7;
+        /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4d4e3', endColorstr='#fcf1f9',GradientType=0 ); E6-9 */
+    }
+    .dl-together {
+        background-image: url("/lib/img/banners/travel_overview_dl_together_desktop.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @media #{$small-only} {
+            background-image: url("/lib/img/banners/travel_overview_dl_together_mobile.jpg");
+        }
+    }
+    small {
+        display: inline-block;
+        line-height: 120%;
+    }
+    .speech-bubble {
+        @include icon-background("\e618", $white, rem-calc(170), "center");
+
+        position: relative;
+        margin-bottom: rem-calc(40);
+        vertical-align: middle;
+        &.red {
+            @include icon-background("\e618", $red, rem-calc(170), "center");
+        }
+        .speech-bubble-text {
+            position: absolute;
+            top: 68%;
+            width: 100%;
+            color: red;
+            p {
+                font-size: 100% !important;
+                line-height: 1.25;
+            }
+            strong {
+                font-size: 200%;
+            }
+        }
+        @media #{$small-only} {
+            margin-bottom: rem-calc(40);
+        }
+    }
+    @media #{$medium-up} {
+        .speech-bubble {
+            .speech-bubble-text {
+                top: 72%;
+            }
+        }
+    }
+    @media #{$large-up} {
+        .speech-bubble {
+            margin-top: rem-calc(13);
+            margin-left: rem-calc(47);
+            .speech-bubble-text {
+                top: 30%;
+                width: 135%;
+            }
+        }
+    }
+}
+.select-overview-container {
+    .select-banner-container {
+        min-height: rem-calc(580);
+        background-color: rgb(240,234,222);
+        background-image: url("/lib/img/banners/select-overview-banner-m.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        h1 {
+            margin-bottom: rem-calc(250);
+            font-size: rem-calc(32);
+            line-height: rem-calc(34);
+        }
+        /* button {
+        width: 100%;
+            @media #{$small-only} {
+                font-size: 1rem;
+            }
+            @media #{$medium-up} {
+                width: auto;
+            }
+        } */
+        p {
+            margin-top: rem-calc(25);
+            font-size: rem-calc(10);
+            line-height: rem-calc(15);
+        }
+        @media #{$medium-up} {
+            min-height: rem-calc(665);
+            background-image: url("/lib/img/banners/select-overview-banner-t.jpg");
+            h1 {
+                margin-bottom: rem-calc(275);
+                font-size: rem-calc(50);
+                line-height: rem-calc(54);
+            }
+        }
+        @media #{$large-up} {
+            min-height: rem-calc(725);
+            background-color: rgb(253,253,253);
+            background-image: url("/lib/img/banners/select-overview-banner-d.jpg");
+            background-position: center center;
+            background-size: auto;
+            h1 {
+                margin-bottom: rem-calc(350);
+            }
+        }
+    }
+    .cover-levels-overview {
+        position: relative;
+    }
+    .cover-level-overview-1, .cover-level-overview-2, .cover-level-overview-3 {
+        min-height: rem-calc(500);
+        background-position: bottom center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        h1, h2, p {
+            color: $white !important;
+        }
+        p {
+            margin-bottom: 4.5rem;
+        }
+        .arrow-down-no-shadow {
+            background-color: inherit;
+            background-image: inherit;
+            background-position: inherit;
+        }
+    }
+    
+    .cover-level-overview-1, .arrow-top {
+        //background-image: url("/lib/img/banners/travel_overview_single_mobile.jpg");
+        @media #{$small-only} {
+            background-image: url("/lib/img/banners/select-cover-levels-1-m.jpg");
+            .arrow-top {
+                background-color: $white;
+                background-image: none;
+            }
+            .arrow-down-no-shadow {
+                background-image: url("/lib/img/banners/select-cover-levels-1-m.jpg");
+                background-position: bottom center;
+            }
+        }
+        @media #{$medium-only} {
+            background-image: url("/lib/img/banners/select-cover-levels-1-t.jpg");
+            background-position: top center;
+            .arrow-top {
+                background-image: url("/lib/img/banners/select-cover-levels-1-t.jpg");
+                background-position: top center;
+            }
+            .arrow-down-no-shadow {
+                background-image: url("/lib/img/banners/select-cover-levels-1-t.jpg");
+                background-position: bottom center;
+            }
+        }
+        @media #{$large-up} {
+            background-image: url("/lib/img/banners/select-cover-levels-1-d.jpg");
+            .arrow-top {
+                background-image: url("/lib/img/banners/select-cover-levels-1-d.jpg");
+                background-position: top center;
+            }
+            .arrow-down-no-shadow {
+                background-image: url("/lib/img/banners/select-cover-levels-1-d.jpg");
+                background-position: bottom center;
+            }
+        }
+    }
+    .cover-level-overview-2 {
+        //background-image: url("/lib/img/banners/travel_overview_multi_mobile.jpg");
+        @media #{$small-only} {
+            background-image: url("/lib/img/banners/select-cover-levels-2-m.jpg");
+            .arrow-top {
+                background-color: $white;
+                background-image: none;
+            }
+            .arrow-down-no-shadow {
+                background-image: url("/lib/img/banners/select-cover-levels-2-m.jpg");
+                background-position: bottom center;
+            }
+        }
+        @media #{$medium-only} {
+            background-image: url("/lib/img/banners/select-cover-levels-2-t.jpg");
+            .arrow-top {
+                background-image: url("/lib/img/banners/select-cover-levels-2-t.jpg");
+                background-position: top center;
+            }
+            .arrow-down-no-shadow {
+                background-image: url("/lib/img/banners/select-cover-levels-2-t.jpg");
+                background-position: bottom center;
+            }
+        }
+        @media #{$large-up} {
+            background-image: url("/lib/img/banners/select-cover-levels-2-d.jpg");
+            .arrow-top {
+                background-image: url("/lib/img/banners/select-cover-levels-2-d.jpg");
+                background-position: top center;
+            }
+            .arrow-down-no-shadow {
+                background-image: url("/lib/img/banners/select-cover-levels-2-d.jpg");
+                background-position: bottom center;
+            }
+        }
+    }
+    .cover-level-overview-3 {
+        //background-image: url("/lib/img/banners/travel_overview_discover_mobile.jpg");
+        @media #{$small-only} {
+            background-image: url("/lib/img/banners/select-cover-levels-3-m.jpg");
+            .arrow-top {
+                background-color: $white;
+                background-image: none;
+            }
+            .arrow-down-no-shadow {
+                background-image: url("/lib/img/banners/select-cover-levels-3-m.jpg");
+                background-position: bottom center;
+            }
+
+        }
+        @media #{$medium-only} {
+            background-image: url("/lib/img/banners/select-cover-levels-3-t.jpg");
+            .arrow-top {
+                background-image: url("/lib/img/banners/select-cover-levels-3-t.jpg");
+                background-position: top center;
+            }
+            .arrow-down-no-shadow {
+                background-image: url("/lib/img/banners/select-cover-levels-3-t.jpg");
+                background-position: bottom center;
+            }
+        }
+        @media #{$large-up} {
+            background-image: url("/lib/img/banners/select-cover-levels-3-d.jpg");
+            background-size: auto;
+            .arrow-top {
+                background-image: none;
+                background-color: rgb(101,9,12);
+            }
+            .arrow-down-no-shadow {
+                ackground-image: none;
+                background-color: rgb(188,12,22);
+            }
+        }
+    }
+    .cover-extras {
+        padding-bottom: rem-calc(350);
+        background-color: rgb(245,248,255);
+        background-image: url("/lib/img/banners/select-overview-optional-extras-m.jpg");
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        .button {
+            margin-top: rem-calc(50);
+        }
+        @media #{$medium-only} {
+            padding-bottom: rem-calc(120);
+            background-image: url("/lib/img/banners/select-overview-optional-extras-d.jpg");
+            h1 {
+                padding-bottom: rem-calc(200);
+            }
+            .button {
+                margin-top: rem-calc(150);
+            }
+            // Desktop background works better for tablet.
+            // background-image: url("/lib/img/banners/select-overview-optional-extras-t.jpg");
+        }
+        @media #{$large-up} {
+            padding-bottom: rem-calc(25);
+            background-image: url("/lib/img/banners/select-overview-optional-extras-d.jpg");
+        }
+    }
+    .select-cross-sell {
+        background-image: url("/lib/img/banners/select-overview-insurance-review-m.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        p.disclaimer {
+            margin-top: 355px;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        @media #{$medium-up} {
+            background-image: url("/lib/img/banners/select-overview-insurance-review-t.jpg");
+            p.disclaimer {
+                margin-top: 300px;
+                background-size: cover;
+            }
+        }
+        @media #{$large-up} {
+            background-image: url("/lib/img/banners/select-overview-insurance-review-d.jpg");
+            p.disclaimer {
+                margin-top: 340px;
+            }
+        }
+    }
+    .vertical-container-wrapper {
+        display: table;
+    }
+    .vertical-element-wrapper {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+.breakdown-overview-container {
+    .breakdown-banner-container {
+        min-height: rem-calc(580);
+        background-color: rgb(240,234,222);
+        background-image: url("/lib/img/banners/breakdown-overview-banner-m.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        h1 {
+            margin-bottom: rem-calc(250);
+            font-size: rem-calc(32);
+            line-height: rem-calc(34);
+        }
+        p {
+            margin-top: rem-calc(25);
+            color: $white;
+            font-size: rem-calc(10);
+            line-height: rem-calc(15);
+        }
+        @media #{$medium-up} {
+            min-height: rem-calc(665);
+            background-image: url("/lib/img/banners/breakdown-overview-banner-t.jpg");
+            h1 {
+                margin-bottom: rem-calc(300);
+                font-size: rem-calc(50);
+                line-height: rem-calc(54);
+            }
+            p {
+                margin-top: 0;
+                margin-bottom: 0;
+                color: $black;
+                font-size: rem-calc(18);
+                line-height: rem-calc(22);
+            }
+        }
+        @media #{$large-up} {
+            min-height: rem-calc(725);
+            background-color: rgb(253,253,253);
+            background-image: url("/lib/img/banners/breakdown-overview-banner-d.jpg");
+            background-position: center center;
+            background-size: auto;
+            h1 {
+                margin-bottom: rem-calc(410);
+            }
+        }
+    }
+    .cover-levels-overview {
+        .arrow-top {
+            background-color: $white !important;
+        }
+        .cover-level-overview-1, .cover-level-overview-2, .cover-level-overview-3, .cover-level-overview-4, .cover-level-overview-5 {
+            min-height: rem-calc(500);
+            .arrow-down-no-shadow {
+                background: inherit;
+            }
+        }
+    }
+    .breakdown-styled-carousel {
+        @media #{$small-only} {
+            .slick-prev, .slick-next {
+                top: 32%;
+            }
+        }
+        @media #{$medium-only} {
+            .slick-prev, .slick-next {
+                top: 32%;
+            }
+        }
+        .slick-prev:before, .slick-next:before {
+            color: $green;
+        }
+        .carousel-icon-1, .carousel-icon-2 {
+            @include icon-background("\e618", $red, rem-calc(165), "center");
+            //margin-top: rem-calc(90px);
+
+            position: relative;
+            vertical-align: middle;
+            @media #{$small-only} {
+                margin-bottom: rem-calc(30);
+            }
+            @media #{$medium-only} {
+                margin-bottom: rem-calc(30);
+            }
+            .carousel-icon-1-text {
+                position: absolute;
+                top: 25%;
+                left: 25%;
+                margin-bottom: 0;
+                padding-bottom: 0;
+                width: 50%;
+                p {
+                    color: $white;
+                    font-size: rem-calc(40);
+                    line-height: rem-calc(42);
+                }
+                @media #{$large-up} {
+                    left: 51%;
+                }
+            }
+        }
+        .carousel-icon-2 {
+            @include icon-background("\e670", $green, rem-calc(150), "center");
+        }
+    }
+    .green-flag-vehicles {
+        @media #{$small-only} {
+            margin-top: 30%;
+            .columns {
+                margin-top: -20%;
+            }
+        }
+        @media #{$medium-only} {
+            margin-top: rem-calc(224);
+            .columns {
+                margin-top: rem-calc(-175);
+            }
+        }
+        @media #{$large-up} {
+            margin-top: rem-calc(256);
+            .columns {
+                margin-top: rem-calc(-210);
+            }
+        }
+    }
+    .forty-four-mins {
+        min-height: rem-calc(500);
+        background-image: url("/lib/img/banners/breakdown-44-mins-m.jpg");
+        background-position: 70% center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        .disclaimer {
+            margin-bottom: rem-calc(25);
+            padding-top: rem-calc(250);
+        }
+        @media #{$medium-up} {
+            min-height: rem-calc(675);
+            background-image: url("/lib/img/banners/breakdown-44-mins-t.jpg");
+            background-position: center center;
+            .disclaimer {
+                padding-top: rem-calc(300);
+            }
+        }
+        @media #{$large-up} {
+            background-image: url("/lib/img/banners/breakdown-44-mins-d.jpg");
+        }
+    }
+}
+.life-content-container {
+    .life-banner-container {
+        background-image: url("/lib/img/banners/overview-life-banner-m.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @media #{$medium-only} {
+            background-image: url("/lib/img/banners/overview-life-banner-t.jpg");
+            background-size: 100% auto;
+        }
+        @media #{$large-up} {
+            background-image: url("/lib/img/banners/overview-life-banner-d.jpg");
+            background-position: center bottom;
+            background-size: auto;
+        }
+        h1 {
+            margin-bottom: rem-calc(240);
+            font-size: rem-calc(27);
+            line-height: rem-calc(32);
+        }
+        @media #{$medium-up} {
+            h1 {
+                margin-bottom: rem-calc(0);
+                padding-bottom: 0;
+                font-size: rem-calc(50);
+                line-height: rem-calc(54);
+            }
+        }
+        .round-label {
+            @media #{$medium-up} {
+                width: rem-calc(160);
+                height: rem-calc(160);
+            }
+        }
+        .more-info {
+            margin-top: rem-calc(20);
+            margin-bottom: rem-calc(0);
+            @media #{$medium-up} {
+                margin-top: rem-calc(0);
+                margin-bottom: rem-calc(320);
+            }
+        }
+    }
+    .cover-levels-overview {
+        position: relative;
+        .cover-button-1 {
+            &:hover {
+                color: $green;
+            }
+        }
+        .cover-button-3 {
+            &:hover {
+                color: $green;
+            }
+        }
+        .cover-level-overview-1 {
+            background-color: $green;
+            background-position: bottom center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @media #{$small-only} {
+                background-image: url("/lib/img/life-cover-level-1-bg-m.jpg");
+            }
+            @media #{$medium-only} {
+                background-image: url("/lib/img/life-cover-level-1-bg-t.jpg");
+            }
+            @media #{$large-up} {
+                background-image: url("/lib/img/life-cover-level-1-bg-d.jpg");
+            }
+            .arrow-down-no-shadow {
+                background-color: $white;
+                background-position: bottom center;
+                @media #{$small-only} {
+                    background-image: url("/lib/img/life-cover-level-1-bg-m.jpg");
+                }
+                @media #{$medium-only} {
+                    background-image: url("/lib/img/life-cover-level-1-bg-t.jpg");
+                }
+                @media #{$large-up} {
+                    background-image: url("/lib/img/life-cover-level-1-bg-d.jpg");
+                }
+            }
+            .arrow-top {
+                background-color: $white;
+                @media #{$small-only} {
+                    bottom: rem-calc(-16px);
+                }
+            }
+        }
+        .cover-level-overview-3 {
+            background-color: $red;
+            background-position: bottom center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @media #{$small-only} {
+                background-image: url("/lib/img/life-cover-level-2-bg-m.jpg");
+            }
+            @media #{$medium-only} {
+                background-image: url("/lib/img/life-cover-level-2-bg-t.jpg");
+            }
+            @media #{$large-up} {
+                background-image: url("/lib/img/life-cover-level-2-bg-d.jpg");
+            }
+            .arrow-down-no-shadow {
+                background-color: $white;
+                background-position: bottom center;
+                @media #{$small-only} {
+                    background-image: url("/lib/img/life-cover-level-2-bg-m.jpg");
+                }
+                @media #{$medium-only} {
+                    background-image: url("/lib/img/life-cover-level-2-bg-t.jpg");
+                }
+                @media #{$large-up} {
+                    background-image: url("/lib/img/life-cover-level-2-bg-d.jpg");
+                }
+            }
+            .arrow-top {
+                background-color: $white;
+                @media #{$small-only} {
+                    bottom: rem-calc(-16px);
+                }
+            }
+        }
+    }
+    .cover-extras {
+        background-color: #ece2cc;
+        background-position: bottom right;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        @media #{$small-only} {
+            padding-bottom: rem-calc(150);
+            background-image: url("/lib/img/life-cover-extras-bg-m.jpg");
+        }
+        @media #{$medium-only} {
+            padding-bottom: rem-calc(175);
+            background-image: url("/lib/img/life-cover-extras-bg-t.jpg");
+        }
+        @media #{$large-up} {
+            background-image: url("/lib/img/life-cover-extras-bg-d.jpg");
+        }
+        .arrow-down-no-shadow {
+            background-color: $red;
+        }
+    }
+
+    .fixed-column-height {
+        min-height: rem-calc(575);
+    }
+    .dl-together {
+        @media #{$medium-up} {
+            background-image: url("/lib/img/life-dl-together-t.jpg");
+            background-position: bottom center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            p {
+                padding-top: rem-calc(500);
+            }
+        }
+        @media #{$large-up} {
+            background-image: url("/lib/img/life-dl-together-d.jpg");
+            background-position: left bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            p {
+                margin-bottom: rem-calc(5);
+                padding-top: rem-calc(220);
+                small {
+                    font-size: rem-calc(12);
+                    line-height: rem-calc(12);
+                }
+            }
+        }
+    }
+
+    .life-styled-carousel {
+        .slick-prev:before, .slick-next:before {
+            color: $total-black;
+        }
+    }
+
+
+    .good-to-know {
+        background-color: #f9fafe;
+        @media #{$large-up} {
+            background-image: url("/lib/img/life-good-to-know-d.jpg");
+            background-position: 80% center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: rem-calc(380);
+        }
+        h2 {
+            @media #{$large-up} {
+                margin-top: rem-calc(50);
+                margin-bottom: rem-calc(50);
+            }
+        }
+    }
+
+    & .good-to-know-red {
+
+        @media #{$medium-only} {
+            min-height: rem-calc(750);
+        }
+        // @media #{$small-only} {
+        //     min-height: rem-calc(500);
+        // }
+    }
+}

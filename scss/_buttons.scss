@@ -1,0 +1,130 @@
+//
+// Custom overrides for Buttons
+//
+button, .button {
+    overflow: none;
+    // letter-spacing: -1px;
+    padding: rem-calc(10) rem-calc(22);
+    border: $button-border-style $button-border-width $button-border-color;
+    border-radius: $global-rounded;
+    &.icon-button {
+        border: none;
+        background: none;
+    }
+    &.square {
+        padding: rem-calc(15);
+    }
+    // Primary button styles
+    &.primary {
+        opacity: $button-default-opacity;
+        &.hover, &:hover, &:focus {
+            /* links text decoration underlines here*/
+            text-decoration: none;
+            opacity: $button-bg-hover-opacity;
+        }
+        &.white-text {
+            color: $grey-light;
+        }
+        span {
+            &[class^="i-"] {
+                display: inline-block;
+                margin-right: rem-calc(15);
+                vertical-align: bottom;
+                font-size: rem-calc(25);
+                &.no-text {
+                    margin-right: rem-calc(0);
+                }
+                &.large {
+                    font-size: rem-calc(50);
+                    line-height: rem-calc(50);
+                }
+                &:hover {
+                    background-color: transparent;
+                    color: $grey-dark;
+                }
+            }
+        }
+    }
+    // Secondary button styles
+    &.secondary {
+        border-color: $border-grey;
+        background-color: transparent;
+        &.border-red-light {
+            @include hover-scale($red-light, $button-function-factor-percent);
+        }
+        &:hover, &.hover, &:focus {
+            border-color: $button-border-color;
+            background-color: $red;
+            color: $grey-light;
+            text-decoration: none;
+            &.hover-black-bg {
+                background-color: $black;
+            }
+        }
+        &.white-text {
+            color: $grey-light;
+        }
+        span {
+            &[class^="i-"] {
+                display: inline-block;
+                margin-right: rem-calc(15);
+                vertical-align: bottom;
+                font-size: rem-calc(25);
+                &.no-text {
+                    margin-right: rem-calc(0);
+                }
+                &.large {
+                    font-size: rem-calc(50);
+                    line-height: rem-calc(50);
+                }
+                &:hover {
+                    background-color: transparent;
+                    color: $grey-light;
+                }
+            }
+        }
+    }
+    // Tertiary button styles
+    &.tertiary {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: rem-calc(250);
+        border-color: $green;
+        background-color: transparent;
+        text-decoration: none;
+        &.black {
+            color: $black;
+        }
+        span {
+            &[class^="i-"] {
+                display: inline-block;
+                margin-right: rem-calc(15);
+                color: $total-black;
+                vertical-align: bottom;
+                font-size: rem-calc(20);
+                &.no-text {
+                    margin-right: rem-calc(0);
+                }
+                &.large {
+                    font-size: rem-calc(50);
+                    line-height: rem-calc(50);
+                }
+                &:hover, &:focus {
+                    background-color: transparent;
+                    color: $grey-dark;
+                }
+            }
+        }
+    }
+
+    &.invisible {
+        border-color: none;
+        background-color: transparent;
+        &:hover, &.hover, &:focus {
+            border-color: $red;
+            background-color: $red;
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}

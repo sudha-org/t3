@@ -1,0 +1,126 @@
+<!--#set var="page-title" value="Update your browser" -->
+<!--#set var="carquotebaseurl" value="//www.directline.com"-->
+<!--#set var="baseurl" value="//www.directline.com"-->
+<!--#set var="canonical" value="${REQUEST_URI}"-->
+<!--#if expr="\"${REQUEST_URI}\"=/beta\/([a-zA-Z-\/]+)/" --><!--#set var="canonical" value="/$1" --><!--#else --><!--#endif -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include virtual="/common/_htmltags.html"-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="/lib/img/favicon.ico"/>
+    <link rel="stylesheet" href="/lib/css/dlreboot.css" />
+    <!--[if lte IE 9]>
+    <script src="/lib/js/vendor/html5.js"></script>
+    <![endif]-->
+
+    <!--[if IE 9]>
+    <script src="/lib/js/rem.js"></script>
+    <link rel="stylesheet" href="/lib/css/ie9.css" />
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/lib/css/ie8.css" />
+    <![endif]-->    
+    
+
+    <!--#if expr="${canonical-manual}"-->
+    <link rel="canonical" href='<!--#echo var="canonical-manual" -->' />
+    <!--#else -->
+    <link rel="canonical" href='http://www.directline.com<!--#if expr="${canonical-override}" --><!--#echo var="canonical-override" --><!--#else --><!--#echo var="canonical" --><!--#endif -->'/>
+    <!--#endif -->
+    <style type="text/css" >
+a.button,
+button {
+    padding: 10px 22px;
+}
+a#btnQuote{
+ border: 0.13rem solid #b6d323;
+}
+h1, p{
+    
+}
+.h1-margin{
+    
+}
+</style>
+</head>
+<body>
+<div class="content-container">
+<div>
+    <div class="primary-bg-2" style="height: 134px; padding-top: 40px; width:1024px; margin:0 auto;">
+        <div class="row">
+            <div class="small-6 columns text-left">
+                <img src="/lib/img/logo.png" />
+            </div>
+            <div class="small-6 end columns text-right nav-buttons-outer-wrapper">
+                <nav role="navigation" data-topbar="" class="top-bar">
+                    <div class="row">
+                        <div class="get-a-quote-wrapper bring-to-top">
+                            <a target="_blank" class="button secondary" href="<!--#echo var="baseurl" -->/qpm/qpm-login-page">Retrieve a quote</a>
+                            <a id="btnQuote" class="primary button" tabindex="2400">Get a quote</a>
+                            <div id="menuGetQuote" class="get-a-quote-menu text-center panel radius bring-to-top" style="display: none;left:8.5rem; right:0;">
+                                <div class="arrow-up-with-shadow-small white-background"></div>
+                                <ul>
+                                    <li><a title="Car" target="_blank" href="<!--#echo var="baseurl" -->/quote/car/PR0001/PL0001/BR0001/details/get-motor-quote-details#">Car</a>
+                                    </li>
+                                    <li><a title="Home" target="_blank" href="http://css.directline.com/insurance/home/startaction.do?entrypoint=0001&amp;productline=0031">Home</a>
+                                    </li>
+                                    <li><a title="Travel" target="_blank" href="http://css.directline.com/insurance/travel/startaction.do?entrypoint=0001&amp;productline=0005">Travel</a>
+                                    </li>
+                                    <li><a title="Pet" target="_blank" href="http://css.directline.com/insurance/pet/startaction.do?entrypoint=0001&amp;productline=0004">Pet</a>
+                                    </li>
+                                    <li><a title="Breakdown" target="_blank" href="http://css.directline.com/insurance/rescue/startaction.do?entrypoint=0001&amp;productline=0007">Breakdown</a>
+                                    </li>
+                                    <li><a title="Select" data-reveal-id="modal-select-interim" href="#">SELECT Premier</a>
+                                    </li>
+                                    <li><a title="Life" data-reveal-id="get-a-quote-banner-modal" href="#">Life</a>
+                                    </li>
+                                    <li><a title="Van" target="_blank" href="http://css.directline.com/insurance/motor/startaction.do?entrypoint=0001&amp;productline=0016">Van</a>
+                                    </li>
+                                    <li><a title="Landlord" target="_blank" href="http://www.directlineforbusiness.co.uk/landlord-insurance">Landlord</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="cream-background inset-shadow-top">
+        <div class="row">
+            <div class="small-10 small-centered columns text-center">
+                <h1 style="margin-top:70px;padding-bottom: 40px;" class="red"><strong>Looks like you need<br />to update your browser</strong></h1>
+                <p style="margin-bottom: 40px;">Please download one of the following:</p>
+                <img style="border:0 none;" src="/lib/img/update-browsers.png" width="580" height="119" alt="" class="medium-spaced-wrapper-bottom" usemap="#browsers">
+                <map name="browsers">
+                    <area shape="rect" coords="0,0,116,119" target="_blank" href="https://www.google.co.uk/chrome/browser/desktop/index.html" title="Google Chrome" style="cursor:pointer;">
+                    <area shape="rect" coords="117,0,232,119" target="_blank" href="https://www.mozilla.org/en-GB/firefox/new/" title="Mozilla Firefox" style="cursor:pointer;">
+                    <area shape="rect" coords="233,0,348,119" target="_blank" href="http://windows.microsoft.com/en-GB/internet-explorer/download-ie" title="Microsoft Internet Explorer" style="cursor:pointer;">
+                    <area shape="rect" coords="349,0,464,119" target="_blank" href="http://support.apple.com/downloads/#safari" title="Safari" style="cursor:pointer;">
+                    <area shape="rect" coords="465,0,580,119" target="_blank" href="http://www.opera.com" title="Opera" style="cursor:pointer;">
+                </map>
+                <p style="margin-bottom: 40px;">
+                    If you want to keep the browser you already have, keep in mind you'll
+                    <br />miss out the new, optimised experience we've designed for you.
+                </p>
+                <a onclick="legacybrowser.saveUsersValue();" style="margin-bottom:60px;" class="button secondary medium-spaced-wrapper-bottom">Continue anyway</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-wrapper inset-shadow-top">
+    <div class="row">
+        <div class="small-10 small-centered medium-10 columns legal small-spaced-wrapper">
+            <p>&copy; 1999-2014 U K Insurance Limited</p>
+            <p>Direct Line general insurance policies are underwritten by U K Insurance Limited. Registered office: The Wharf, Neville Street, Leeds LS1 4AZ Registered in England and Wales No.1179980. U K Insurance Limited is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority. Registration number 202810. The Financial Services Register can be accessed through <a tabindex="52500" href="http://www.fca.org.uk" title="Financial Conduct Authority website" target="_blank">www.fca.org.uk</a>.</p>
+        </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript"  src="/lib/js/legacybrowser.js"></script>
+</body>
+
+</html>

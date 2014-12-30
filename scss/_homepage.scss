@@ -1,0 +1,210 @@
+#homepage_container {
+
+    .inset-shadow-top {
+        padding-top: 1px;
+    }
+    
+    .meet-winston-wolf, .meet-international {
+        position: relative;
+    }
+    img.winston-wolf {
+        position: absolute;
+        bottom: rem-calc(-180);
+        left: calc(50% - 510px);
+        width: auto;
+        height: auto;
+        max-width: none;
+        overflow: hidden;
+        z-index: 0;
+        @media #{$small-only}{
+            width: 100%;
+            left: calc(50% - 200px);
+            bottom:0;
+        }
+    }
+    .hidden{
+        display: none !important;
+    }
+    section {
+        min-height: rem-calc(600);
+    }
+    h1, h2 {
+        margin: 0;
+        padding:0;
+        width: 100%;
+        height: auto;
+        a {
+            text-decoration: none;
+            width: 100%;
+            display: block;
+            &:active, &:focus, &:hover {
+                background-color: transparent;
+                text-decoration: none;
+            }
+        }
+    }
+    h2 span.large, h2 span.larger {
+        font-family: MuseoSans-Boldest;
+        line-height: 100%;
+        font-weight: 800;
+    }
+    h2 span.large {
+        font-size: 150%;
+        @media #{$small-only}{
+            font-size: 220%;
+        }        
+    }
+    h2 span.larger {
+        font-size: 220%;
+    }
+    a.button {
+       z-index: 1;
+    }
+    .car, .home, .meet-winston-wolf, .meet-international, .travel, .pet, .break-down, 
+    .select-premier, .life, .van, .land-lord, .business,
+    .get-in-touch,.existing-customers{
+        padding: rem-calc(45) 0 0;
+            // ie9 fix
+            a.button {
+                overflow: none;
+                padding: 0.625rem 1.375rem;
+            }
+        @media #{$large-up}{
+            a.button {
+                opacity: 0;
+            }
+            &:hover, &:focus {
+                a.button {
+                    opacity: 1;
+                    -webkit-transition: opacity 0.5s ease-in;
+                    -moz-transition: opacity 0.5s ease-in;
+                    -o-transition: opacity 0.5s ease-in;
+                    -ms-transition: opacity 0.5s ease-in;
+                    transition: opacity 0.5s ease-in;
+                }
+            } 
+        }
+    }
+    .pet, .land-lord, .business{
+        .button.white{
+            border-color:white;
+        }
+    }
+    .car , .select-premier, .home{
+        background-position: center bottom;
+        background-size: auto auto;
+        background-repeat: no-repeat;
+    }
+
+    .car, .select-premier, .meet-winston-wolf, .meet-international {
+        height: rem-calc(600);
+    }
+
+
+
+    .home, .travel, .pet, .break-down, .life, .van, .land-lord, .business, .get-in-touch, .existing-customers{
+        height: rem-calc(300);
+    }
+    .car {
+        background-image: url("/lib/img/dl-homepage-car-bg.jpg");
+    }
+    .home {
+        background-image: url("/lib/img/dl-homepage-home-bg.jpg");
+        background-size: cover;
+    }
+    .select-premier  {
+        background-image: url("/lib/img/dl-homepage-select-bg.jpg");
+    }
+
+    @media #{$small-only}{
+        .meet-winston-wolf {
+            height: rem-calc(820);
+            background: $cream url("/lib/img/harvey-mobile.jpg") no-repeat;
+            background-position: top;    
+            background-size: cover;
+        }
+        .meet-international {
+            height: rem-calc(820);
+            background: $cream url("/lib/img/faq-int-home.png") no-repeat;
+            background-position: bottom;
+            background-size: 115%;
+        }        
+        .car {
+            height: rem-calc(500);
+            background-image: url("/lib/img/dl-homepage-car-bg-m.jpg");
+            background-position: 50% 50%;
+        }
+        .home {
+            background-image: url("/lib/img/dl-homepage-home-bg-t.jpg");
+            background-position: 30% 50%;
+        }
+        .select-premier  {
+            background-image: url("/lib/img/dl-homepage-select-bg-m.jpg");
+        }
+    }
+
+    .speech-bubble {
+        @include icon-background("\e618", $white, rem-calc(200px), "center");
+
+        position: relative;
+        vertical-align: middle;
+        .speech-bubble-text-big {
+            position: absolute;
+            top: 35%;
+            left: 25%;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            width: 50%;
+            font-size: rem-calc(55);
+            line-height: 1.5rem;
+        }
+        .speech-bubble-text {
+            position: absolute;
+            top: 55%;
+            left: 25%;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            width: 50%;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+   }
+   .existing-customers {
+        background-color: $white;
+        &:hover {
+             background-color:$red-dark;
+            span.red, h2, a {
+                color: $white !important;
+            }
+        }
+   }
+   .get-in-touch{
+        background-color: $red-dark;
+        &:hover {
+             background-color:$white;
+            span.red {
+                color: $red-dark !important;
+            }
+            .speech-bubble:before{
+                color: $red;
+            }
+            span.red-dark{
+                color: $white !important;
+            }
+        }
+   }
+   .get-in-touch, .existing-customers{
+    &:hover, &:focus {
+            -webkit-transition: background-color 0.25s ease-in;
+            -moz-transition: background-color 0.25s ease-in;
+            -o-transition: background-color 0.25s ease-in;
+            -ms-transition: background-color 0.25s ease-in;
+            transition: background-color 0.25s ease-in;
+        }
+   }
+   .existing-customers{
+        padding-top: rem-calc(100);
+   }
+
+}
+

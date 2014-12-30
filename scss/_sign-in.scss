@@ -1,0 +1,40 @@
+.existing-customers-wrapper {
+	.header {
+		h1 {
+			padding-bottom: rem-calc(20);
+		}
+		p {
+			font-size: rem-calc(20);
+		}
+	}	
+	.speech-bubble {
+        position: relative;
+        padding-top: rem-calc(65);
+        padding-bottom: rem-calc(50);
+        @include icon-background("\e618",$red, rem-calc(175px), "center");
+        .speech-bubble-text {
+            position: absolute;
+            left: 0;
+            top: 43%;
+            right: 0;
+            @media #{$medium-up} {
+            	top: 40%;
+            }
+            h2 {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+    .accordion {
+	    .i-tickfillcircle, .i-closefillcircle {
+	    	font-size: rem-calc(40);
+	    }
+	    button {
+	    	width: rem-calc(130);
+	    	@media #{$large-up} {
+		    	width: rem-calc(160);
+		    }
+	    }
+	}
+}

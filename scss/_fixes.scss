@@ -1,0 +1,107 @@
+#menu-wrapper-mobile-up {
+	li.nav-link {
+		a {
+			font-size: 1rem;
+			font-family: $body-font-family-light;
+			&.nav-icon-link {
+				display: block;
+				margin-top: -0.3rem;
+			}
+		}
+	}
+}
+.nav-buttons-outer-wrapper {
+	button, a {
+		font-family: $body-font-family-light;
+		@media #{$large-only} {
+			padding: 0.55rem 0.85rem 0.55rem 0.85rem;
+		}
+		&.secondary {
+			border-width: 0.13rem;
+			border-color: $grey-light-darker;
+			&:hover {
+				border-width: 0.13rem;
+				border-color: #d91f26;
+			}
+		}
+	}
+}
+.breadcrumb-wrapper {
+	a {
+		font-family: $body-font-family-light;
+		letter-spacing: -0.01rem;
+	}
+	.breadcrumb-links {
+		span {
+			margin-left: 0.7rem;
+		}
+	}
+}
+.row.main-nav {
+	img {
+		margin-top: -2px;
+		margin-left: -10px;
+	}
+}
+
+.section-wrapper {
+	strong {
+		font-weight: normal;
+	}
+}
+
+.car-wrapper {
+	margin-top: 0.7rem
+}
+
+.banner-right {
+	small {
+		font-size: 0.9rem;
+		font-family: $body-font-family-light;
+	}
+	.speech-bubble {
+		p.speech-bubble-text {
+			font-size: 1.8rem;
+			left: 24%;
+			line-height: 1.8rem;
+			top: 25%;
+		}
+	}
+}
+
+button.icon-button {
+	color: $grey-middle;
+}
+
+a.button {
+	font-family: $body-font-family-light;
+}
+
+.bg-teapot {
+	min-height: rem-calc(350);
+	background-size: contain;
+	background-position: left rem-calc(30);
+}
+
+// removed as breaking paragraph text within accordion
+// .accordion-navigation p {
+// 	max-width: 80%;
+// }
+
+.row .accordion .accordion-navigation a .number-column {
+	padding-top: rem-calc(5);
+	span {
+		font-size: 4.5rem;
+		font-weight: lighter;
+	}
+}
+
+a.button {
+	&.push-left-small {
+		margin-right: 3rem;
+	}
+
+	&.push-right-small {
+		margin-left: 3rem;
+	}
+}

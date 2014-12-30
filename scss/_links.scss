@@ -1,0 +1,146 @@
+$highlight-green: #f5fd9c;
+
+@-webkit-keyframes backgroundhighlight {
+  0% { background-color: transparent; }
+  50% { background-color: $highlight-green; }
+  100% { background-color: transparent; }
+}
+
+@-moz-keyframes backgroundhighlight {
+   0% { background-color: transparent; }
+  50% { background-color: $highlight-green; }
+  100% { background-color: transparent; }
+}
+
+@-ms-keyframes backgroundhighlight {
+  0% { background-color: transparent; }
+  50% { background-color: $highlight-green; }
+  100% { background-color: transparent; }
+}
+
+@-o-keyframes backgroundhighlight {
+  0% { background-color: transparent; }
+  50% { background-color: $highlight-green; }
+  100% { background-color: transparent; }
+}
+
+@keyframes backgroundhighlight {
+ 
+  0% { background-color: transparent; }
+  50% { background-color: $highlight-green; }
+  100% { background-color: transparent; }
+
+}
+
+a{
+	color: $black;
+	// font-family: $link-list-font-family;
+	+.i {
+		color: $black;
+		font-size: rem-calc(24);
+		padding-left: rem-calc(5);
+		font-family: $link-list-icon-font-family;
+		&:hover, &:focus, &:active {text-decoration: none !important;}
+	}
+	
+	&:hover, &.hover 	{color: $black; text-decoration: underline;}
+	&:focus, &.focus 	{color: $black; background-color: $orange; text-decoration: none;}
+	&:active, &.active 	{color: $black; text-decoration: none;}
+
+}
+
+
+p {
+	> a {
+		color: $black;
+		&:hover, &.hover 	{color: $black}
+		&:focus, &.focus 	{color: $black; background-color: $orange;}
+		&:active, &.active 	{color: $blue;}
+
+	}
+}
+
+.highlight{
+			background-color: transparent;
+			-webkit-animation: backgroundhighlight 1.4s linear;
+			-moz-animation: backgroundhighlight 1.4s linear;
+			-ms-animation: backgroundhighlight 1.4s linear;
+			-o-animation: backgroundhighlight 1.4s linear;
+			animation: backgroundhighlight 1.4s linear;
+}			
+
+ul {
+	&.link-list {
+
+		li {
+			margin-bottom: 10px; 
+
+			a{
+				color: $black;
+				font-family: $link-list-font-family;
+				+ .i {
+					color: $black;
+					font-size: rem-calc(24);
+					padding-left: rem-calc(5);
+					font-family: $link-list-icon-font-family;
+				}
+				
+				&:hover, &.hover 	{color: $black}
+				&:focus, &.focus 	{color: $black}
+				&:active, &.active 	{color: $blue; text-decoration: none}
+			}
+			&:focus {background-color: $orange;}
+		}
+
+	}
+
+	&.feature-list {
+
+		&.hover {
+			> li {
+				padding: 10px;
+				border-radius: 30px;
+				margin-bottom: rem-calc(10) !important;
+				border: solid 2px rgba(140, 140, 140, 0);
+
+				&:hover {
+					border: solid 2px rgba(140, 140, 140, .8);
+				}
+				&.crossed {
+					a:hover {
+						cursor: default;
+					}
+					&:hover {
+						border: solid 2px transparent;
+						cursor: default;
+					}
+				}
+
+				&.ticked {
+					background-position: 12px 4px !important;
+					@media #{$medium-up} {
+						background-position: 12px 9px !important;
+					}
+					padding-left: 50px;
+				}
+
+				> a {
+					text-decoration: none;
+					display:block;
+					&:focus{
+						background-color: transparent;
+					}
+				}
+			}			
+		}
+	}
+
+}
+
+footer { 
+	a {
+		font-family: $body-font-family-light;
+		color: $total-black;
+		font-size: rem-calc(14);
+	}
+}

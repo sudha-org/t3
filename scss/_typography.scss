@@ -1,0 +1,123 @@
+$i: 1;
+$lh-list: $h1-line-height, $h2-line-height, $h3-line-height, $h4-line-height;
+$mb-list: $h1-margin-bottom, $h2-margin-bottom, $h3-margin-bottom, $h4-margin-bottom;
+
+@each $item in $lh-list {
+    h#{$i} {
+    	line-height: #{$item};
+    	margin-bottom: 0px;
+    	padding-bottom: nth($mb-list, $i);
+    }
+    $i: $i + 1;
+}  
+
+h1 { 
+  letter-spacing: rem-calc(-2);
+}
+h1,h2,h3,h4,h5,h6 { 
+  letter-spacing: rem-calc(-1);
+  &.subheader{
+    color: $subheader-font-color; 
+    font-family: $subheader-font-family;
+    line-height: $subheader-line-height;
+    padding-bottom: 0;
+  }
+}
+h1 {
+  font-size: rem-calc(32);
+  line-height: rem-calc(34);
+}
+h2 {
+    font-size: rem-calc(24);
+    line-height: rem-calc(26);
+}
+@media #{$medium-up} {
+  h1 {
+      font-size: rem-calc(50);
+      line-height: rem-calc(54);
+  }
+  h2 {
+      font-size: rem-calc(30);
+      line-height: rem-calc(32);
+    }
+}
+
+p{
+	&.stand{
+		font-size: $paragraph-stand-font-size;
+		line-height: $paragraph-stand-line-height;
+    &.large {
+      font-size: rem-calc(22);
+      line-height: rem-calc(32);
+    }
+	}
+}
+
+.small-text {
+  p{
+  font-size: 0.75rem;  
+  }
+}
+.large-text {
+  // p{
+  font-size: 1.3rem;  
+  // }
+}
+blockquote {
+	font-size: $blockquote-font-size;
+	line-height: $blockquote-line-height;
+	font-weight: $font-weight-bold;
+	padding-bottom: rem-calc(24);
+	padding-left: rem-calc(50);
+	padding-right: rem-calc(50);
+	position: relative;
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: $black;
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:25px;
+}
+
+blockquote::after{
+  content: "\201D"; /*Unicode for Left Double Quote*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: $black;
+  position: absolute;
+  right: 20px;
+  bottom:5px;
+}
+
+
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+hr {
+  &.vertical {
+    height: rem-calc(50);
+    border-left: solid 1px #ddd;
+    width: 1px;
+    margin: rem-calc(10) auto;
+  }
+}
+span {
+  &.or {
+    display: inline-block;
+    line-height: 1;
+    padding: 10px;
+    color: white;
+    background-color: $red;
+    font-family: $body-font-family-regular;
+  }
+}

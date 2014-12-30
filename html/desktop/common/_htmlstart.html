@@ -1,0 +1,34 @@
+<!--#set var="carquotebaseurl" value="//www.directline.com"-->
+<!--#set var="baseurl" value="//www.directline.com"-->
+<!--#set var="canonical" value="${REQUEST_URI}"-->
+ <!--#if expr="\"${REQUEST_URI}\"=/beta\/([a-zA-Z-\/]+)/" --><!--#set var="canonical" value="/$1" --><!--#else --><!--#endif -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include virtual="/common/_htmltags.html"-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="/lib/img/favicon.ico"/>
+    <link rel="stylesheet" href="/lib/css/dlreboot.css" />
+    
+    <!--[if lte IE 9]>
+    <script src="/lib/js/vendor/html5.js"></script>
+    <![endif]-->
+
+    <!--[if IE 9]>
+    <link rel="stylesheet" href="/lib/css/ie9.css" />
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/lib/css/ie8.css" />
+    <![endif]-->    
+    
+    <!--#if expr="${canonical-manual}"-->
+    <link rel="canonical" href='<!--#echo var="canonical-manual" -->' />
+    <!--#else -->
+    <link rel="canonical" href='http://www.directline.com<!--#if expr="${canonical-override}" --><!--#echo var="canonical-override" --><!--#else --><!--#echo var="canonical" --><!--#endif -->'/>
+    <!--#endif -->
+</head>
+<body>
+<!--#include virtual="/common/_mobilenav.html"-->
+<div class="content-container">

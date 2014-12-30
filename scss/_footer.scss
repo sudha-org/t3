@@ -1,0 +1,38 @@
+footer {
+	padding-top: rem-calc(60);
+	a {
+		text-decoration: none;
+	}
+	.legal {
+		padding-top: rem-calc(40);
+	}
+	.border-right {
+		@media #{$small-only} {
+			border-right: 1px solid $grey-light;
+		}
+	 }
+	.follow-us {
+		overflow: hidden;
+	}
+	.footer-social-icon {
+		margin-bottom: rem-calc(20);
+		[class^="i-"], [class*=" i-"] {
+			font-size: 3.25rem;
+		}
+		@media #{$medium-up} {
+			padding-left: rem-calc(32);
+			.i-facebook:before, .i-googleplus:before, .i-twitter:before, .i-youtube:before, .i-blog:before {
+				cursor: pointer;
+			}
+		}
+		a {
+			font-size: 1.0625rem;
+		}
+		a:hover {
+			text-decoration: blink;
+		}
+	}
+	p {
+		margin-bottom: 1.5rem;
+	}
+}

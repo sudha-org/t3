@@ -1,0 +1,37 @@
+.together, .media {	
+	.product-panel {
+
+		@media #{$medium-up} {
+			color: black;
+			border-right: 1px solid #ddd;
+			min-height: 390px;
+		    margin: rem-calc(10) 0;
+		    padding: 20px;
+
+			&:nth-of-type(even) {
+				border-right: $white;
+			} 
+
+
+			& .button {
+				position: absolute;
+				bottom: -16px;
+				left: 127px;
+				}
+		}	
+
+		@media #{$small-only} {
+			
+			padding-bottom:26px;
+
+			& h3 {
+				padding-top: 25px;
+
+			}
+
+		}
+
+	}
+
+}
+

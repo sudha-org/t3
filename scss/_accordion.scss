@@ -1,0 +1,609 @@
+// accordion animation
+
+@mixin rotated ($degrees) {
+  -webkit-transform: rotate($degrees); /* Chrome, Safari, Opera */
+  -moz-transform: rotate($degrees); /* Chrome, Safari, Opera */
+  -ms-transform: rotate($degrees); /* IE 9 */
+  transform: rotate($degrees);
+}
+
+.rotating {
+  -webkit-animation: rotating-function .2s ease-out;
+     -moz-animation: rotating-function .2s ease-out;
+      -ms-animation: rotating-function .2s ease-out;
+       -o-animation: rotating-function .2s ease-out;
+          animation: rotating-function .2s ease-out;
+}
+.rotating-back {
+  -webkit-animation: rotating-back-function .2s ease-out;
+     -moz-animation: rotating-back-function .2s ease-out;
+      -ms-animation: rotating-back-function .2s ease-out;
+       -o-animation: rotating-back-function .2s ease-out;
+          animation: rotating-back-function .2s ease-out;
+}
+
+
+@-webkit-keyframes rotating-function {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@-moz-keyframes rotating-function {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(45deg);
+  }
+}
+
+@-ms-keyframes rotating-function {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(45deg);
+  }
+}
+
+@-o-keyframes rotating-function {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(45deg);
+  }
+}
+
+@keyframes rotating-function {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+@-webkit-keyframes rotating-back-function {
+  from {
+    -webkit-transform: rotate(45deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-moz-keyframes rotating-back-function {
+  from {
+    -moz-transform: rotate(45deg);
+  }
+  to {
+    -moz-transform: rotate(0deg);
+  }
+}
+
+@-ms-keyframes rotating-back-function {
+  from {
+    -ms-transform: rotate(45deg);
+  }
+  to {
+    -ms-transform: rotate(0deg);
+  }
+}
+
+@-o-keyframes rotating-back-function {
+  from {
+    -o-transform: rotate(45deg);
+  }
+  to {
+    -o-transform: rotate(0deg);
+  }
+}
+
+@keyframes rotating-back-function {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.accordion-navigation.active .i-plus:before {
+	display: inline-block;
+	@extend .rotating;
+	@include rotated(135deg);
+}
+.accordion-navigation.inactive .i-plus:before {
+	display: inline-block;
+	@extend .rotating-back;
+	//@include rotated(0deg);
+}
+
+//accordion animation finish
+
+.secondary-accordion {
+	.accordion {
+		.accordion-navigation {
+			overflow: visible;
+
+			a.question {
+				text-decoration: none;
+				&:hover, &:focus, &.active {
+					background-color: $grey-light;
+				}
+				a:hover, a:focus, a.active {
+					background-color: $grey-light;
+				}
+			}
+			.content {
+				overflow: visible;
+				margin: 0;
+				a {
+					&.button {
+						font-size: rem-calc(20);
+						width: rem-calc(160);
+					}
+				}
+			}
+		}
+	}
+}
+
+// contact us overview 
+.contact-us-overview, .media, .about-us-container {
+	.secondary-accordion {
+		.accordion {
+			.accordion-navigation {
+				overflow: hidden;
+
+				a.question {
+					text-decoration: none;
+					&:hover, &:focus, &.active {
+						background-color: $grey-light;
+					}
+					a:hover, a:focus, a.active {
+						background-color: $grey-light;
+					}
+				}
+				.content {
+					overflow: hidden;
+
+					a {
+						&.button {
+							width: auto;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.accordion {
+	position: relative;
+	.accordion-header {
+		border-bottom: 1px solid $grey-light;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		h2 {
+			font-size: rem-calc(40);
+			line-height: rem-calc(50);
+			padding-bottom: 0;
+		}
+	}
+
+	.accordion-navigation {
+		border-bottom: 1px solid $grey-light;
+		min-height: rem-calc(60);
+		position: relative;
+		// margin-top: rem-calc(20);
+		&:first-child {
+			border-top: 1px solid $grey-light;
+		}
+		&:hover {
+			// background-color: none;
+		}
+
+		.content {
+			background-color: $white;
+			overflow: auto;
+			margin: rem-calc(60) 0;
+			a {
+				font-size: rem-cal(17) !important;
+				&.text-link {
+					&:focus {
+						background-color: $orange;
+						text-decoration: underline;
+					}
+					&:hover {
+						opacity: $button-bg-hover-opacity;
+						text-decoration: underline;
+					}
+				}
+				&.button {
+					&.primary {
+						opacity: $button-default-opacity;
+						&:focus, &:hover {
+							opacity: $button-bg-hover-opacity;
+						}
+					}
+				}	
+			}
+		}
+		.accordion-state {
+			padding-top: rem-calc(15);
+			[class^="i-"], [class*=" i-"] {
+				&:before {
+					margin-left: rem-calc(5);
+				}
+			}
+		}
+		a {
+			.number-column {
+				padding-top: 1rem;
+			}
+			overflow: hidden;
+			p {
+				padding-top: rem-calc(30);
+				font-size: rem-calc(18);
+				@media #{$medium-up} {
+					font-size: rem-calc(24);
+				}
+			}
+			&:hover {
+				text-decoration: none;
+			}
+			.open, &:focus {
+				background-color: $green;
+			}
+		}
+		[class^="i-"], [class*=" i-"] {
+			&:hover {
+				color: $black;
+			}
+		}
+
+		a.active {
+			background: $green;
+			&:hover {
+				// background-color: none;
+			}
+		}
+	}
+
+	.accordion-navigation {
+		a {
+			.number-column {
+				[class^="i-"], [class*=" i-"] {
+					font-size: rem-calc(44);
+				}
+			}
+		}
+	}
+	
+	@media #{$medium-up} {
+		.accordion-navigation {
+			min-height: rem-calc(100);
+			&:hover {
+				// background-color: none;
+			}
+			a {
+				.number-column {
+					padding-top: 1rem;
+				}
+				overflow: auto;
+				font-size: rem-calc(25);
+				p {
+					padding-top: 25px;
+				}
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			.content {
+				a {
+					font-size: rem-calc(16);
+				}
+			}
+		}
+		.accordion-navigation {
+		a {
+			.number-column {
+				[class^="i-"], [class*=" i-"] {
+					font-size: rem-calc(60);
+				}
+			}
+		}
+	}
+	}
+}
+
+
+// accordion animation
+
+@mixin rotated ($degrees) {
+  -webkit-transform: rotate($degrees); /* Chrome, Safari, Opera */
+  -moz-transform: rotate($degrees); /* Chrome, Safari, Opera */
+  -ms-transform: rotate($degrees); /* IE 9 */
+  transform: rotate($degrees);
+}
+
+.rotating {
+  -webkit-animation: rotating-function .2s ease-out;
+     -moz-animation: rotating-function .2s ease-out;
+      -ms-animation: rotating-function .2s ease-out;
+       -o-animation: rotating-function .2s ease-out;
+          animation: rotating-function .2s ease-out;
+}
+.rotating-back {
+  -webkit-animation: rotating-back-function .2s ease-out;
+     -moz-animation: rotating-back-function .2s ease-out;
+      -ms-animation: rotating-back-function .2s ease-out;
+       -o-animation: rotating-back-function .2s ease-out;
+          animation: rotating-back-function .2s ease-out;
+}
+
+
+@-webkit-keyframes rotating-function {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@-moz-keyframes rotating-function {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(45deg);
+  }
+}
+
+@-ms-keyframes rotating-function {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(45deg);
+  }
+}
+
+@-o-keyframes rotating-function {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(45deg);
+  }
+}
+
+@keyframes rotating-function {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+@-webkit-keyframes rotating-back-function {
+  from {
+    -webkit-transform: rotate(45deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-moz-keyframes rotating-back-function {
+  from {
+    -moz-transform: rotate(45deg);
+  }
+  to {
+    -moz-transform: rotate(0deg);
+  }
+}
+
+@-ms-keyframes rotating-back-function {
+  from {
+    -ms-transform: rotate(45deg);
+  }
+  to {
+    -ms-transform: rotate(0deg);
+  }
+}
+
+@-o-keyframes rotating-back-function {
+  from {
+    -o-transform: rotate(45deg);
+  }
+  to {
+    -o-transform: rotate(0deg);
+  }
+}
+
+@keyframes rotating-back-function {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.accordion-navigation.active .i-plus:before {
+	display: inline-block;
+	@extend .rotating;
+	@include rotated(135deg);
+}
+.accordion-navigation.inactive .i-plus:before {
+	display: inline-block;
+	@extend .rotating-back;
+	//@include rotated(0deg);
+}
+
+//accordion animation finish
+
+/* .secondary-accordion {
+	.accordion {
+		.accordion-navigation {
+			a.question {
+				text-decoration: none;
+				&:hover, &:focus, &.active {
+					background-color: $grey-light;
+				}
+				a:hover, a:focus, a.active {
+					background-color: $grey-light;
+				}
+			}
+		}
+	}
+}
+
+.accordion {
+	position: relative;
+	.accordion-header {
+		border-bottom: 1px solid $grey-light;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		h2 {
+			font-size: rem-calc(40);
+			line-height: rem-calc(50);
+			padding-bottom: 0;
+		}
+	}
+
+	.accordion-navigation {
+		border-bottom: 1px solid $grey-light;
+		overflow: auto;
+		min-height: rem-calc(60);
+		position: relative;
+		overflow: hidden;
+		// margin-top: rem-calc(20);
+		&:first-child {
+			border-top: 1px solid $grey-light;
+		}
+		&:hover {
+			// background-color: none;
+		}
+
+		.content {
+			background-color: $white;
+			overflow: auto;
+			margin: rem-calc(60) 0;
+			a {
+				font-size: rem-cal(17) !important;
+				&.text-link {
+					&:focus {
+						background-color: $orange;
+						text-decoration: underline;
+					}
+					&:hover {
+						opacity: $button-bg-hover-opacity;
+						text-decoration: underline;
+					}
+				}
+				&.button {
+
+					&.primary {
+						opacity: $button-default-opacity;
+						&:focus, &:hover {
+							opacity: $button-bg-hover-opacity;
+						}
+					}
+				}	
+			}
+		}
+		.accordion-state {
+			padding-top: rem-calc(15);
+			[class^="i-"], [class*=" i-"] {
+				&:before {
+					margin-left: rem-calc(5);
+				}
+			}
+		}
+		a {
+			.number-column {
+				padding-top: 1rem;
+			}
+			overflow: hidden;
+			p {
+				padding-top: rem-calc(30);
+				font-size: rem-calc(18);
+				@media #{$medium-up} {
+					font-size: rem-calc(24);
+				}
+			}
+			&:hover {
+				text-decoration: none;
+			}
+			.open, &:focus {
+				background-color: $green;
+			}
+		}
+		[class^="i-"], [class*=" i-"] {
+			&:hover {
+				color: $black;
+			}
+		}
+
+		a.active {
+			background: $green;
+			&:hover {
+				// background-color: none;
+			}
+		}
+	}
+
+	.accordion-navigation {
+		a {
+			.number-column {
+				[class^="i-"], [class*=" i-"] {
+					font-size: rem-calc(44);
+				}
+			}
+		}
+	}
+	
+	@media #{$medium-up} {
+		.accordion-navigation {
+			min-height: rem-calc(100);
+			&:hover {
+				// background-color: none;
+			}
+			a {
+				.number-column {
+					padding-top: 1rem;
+				}
+				overflow: auto;
+				font-size: rem-calc(25);
+				p {
+					padding-top: 25px;
+				}
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			.content {
+				a {
+					font-size: rem-calc(16);
+				}
+			}
+		}
+		.accordion-navigation {
+		a {
+			.number-column {
+				[class^="i-"], [class*=" i-"] {
+					font-size: rem-calc(60);
+				}
+			}
+		}
+	}
+	}
+} */

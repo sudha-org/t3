@@ -1,0 +1,437 @@
+<div id="menu-wrapper-mobile" class="hide-for-large-up fixed">
+    <div class="white-background section-wrapper shadow-bottom">
+        <nav class="row main-nav">
+            <!-- OLD MENU BEHAVIOUR --> 
+            <!-- <div class="small-11 small-centered columns mob-top-nav">
+                <div class="small-2 columns medium-7 ">
+                    <div class="tiny-spaced-wrapper"></div>
+                    <a href="/" title="Direct Line">
+                        <img src="/lib/img/logo2.jpg" alt="direct line logo" class="show-for-small-only small-logo">
+                        <img src="/lib/img/logo.png" alt="direct line logo"  class="show-for-medium-up big-logo">
+                    </a>
+                </div>
+                <div class="small-7 columns text-right medium-3">
+                    <div class="small-spaced-wrapper-top"></div>
+                    <a href="/contact-us"><button class="secondary menu-need-to-call">Get in touch</button></a>
+                </div>
+                <div class="small-3 end columns text-right medium-2">
+                    <div class="small-spaced-wrapper-top"></div>
+                    <button class="secondary menu-button-mobile">Menu</button>
+                    <button class="secondary menu-close-mobile i-close"></button>
+                </div>
+            </div>
+            <div class="small-11 small-centered columns mob-scroll-nav">
+                <div class="small-2 columns medium-7 ">
+                    <div class="tiny-spaced-wrapper"></div>
+                    <a href="/" title="Direct Line">
+                        <img src="/lib/img/logo2.jpg" alt="direct line logo"  class="show-for-small-only small-logo">
+                        <img src="/lib/img/logo.png" alt="direct line logo"  class="show-for-medium-up big-logo">
+                    </a>
+                </div>
+                <div class="small-7 columns text-right medium-3">
+                    <div class="small-spaced-wrapper-top"></div>
+                    <button class="primary menu-button-quote-mobile" data-reveal-id="mob-quote-modal">Get quote</button>
+                </div>
+                <div class="small-3 end columns text-right medium-2">
+                    <div class="small-spaced-wrapper-top"></div>
+                    <button class="secondary menu-button-mobile">Menu</button>
+                    <button class="secondary menu-close-mobile i-close"></button>
+                </div>
+            </div> -->
+            <!-- UPDATING THE MENU TO HAVE CONSTANT GET A QUOTE BUTTON RATHER THAN ONLY ON SCROLL -->
+            <div class="small-11 small-centered columns mob-top-nav">
+                <div class="small-2 columns medium-7 ">
+                    <div class="tiny-spaced-wrapper"></div>
+                    <a href="/" title="Direct Line">
+                        <span class="hidden" style="display:none">logo</span>
+                        <img src="/lib/img/logo2.jpg" alt="direct line logo"  class="show-for-small-only small-logo">
+                        <img src="/lib/img/logo.png" alt="direct line logo"  class="show-for-medium-up big-logo">
+                    </a>
+                </div>
+                <div class="small-7 columns text-right medium-3">
+                    <div class="small-spaced-wrapper-top"></div>
+                    <button class="primary menu-button-quote-mobile" data-reveal-id="mob-quote-modal">Get quote</button>
+                </div>
+                <div class="small-3 end columns text-right medium-2">
+                    <div class="small-spaced-wrapper-top"></div>
+                    <button class="secondary menu-button-mobile">Menu</button>
+                    <button class="secondary menu-close-mobile i-close"></button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="nav-top-spacer hide-for-large-up"></div>
+<div data-analytics-uci="DESKTOP-MAIN-NAV" id="menu-wrapper-mobile-up" class="show-for-large-up">
+    <div class="white-background section-wrapper shadow-bottom small-spaced-wrapper-top overflow-hidden">
+        <div class="row text-right page-top-links">
+            <div class="small-10 small-offset-1 end columns">
+                <a href="/contact-us">Need to call?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="red">Personal</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="//www.directlineforbusiness.co.uk" target="_blank" rel="nofollow">Business</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <nav class="row main-nav">
+            <div class="medium-4 medium-offset-1 columns">
+                <a href="/" title="Direct Line">
+                    <span class="hidden" style="display:none">logo</span>
+                    <img src="/lib/img/logo.png" alt="direct line logo" >
+                </a>
+            </div>
+            <div class="medium-7 end columns nav-links">
+                <ul class="medium-block-grid-5">
+                    <li id="product-nav-link" class="nav-link border border-left"><a>Products</a>
+                    </li>
+                    <li id="help-nav-link" class="nav-link border"><a>Help</a>
+                    </li>
+                    <li id="explore-nav-link" class="nav-link border"><a>Explore</a>
+                    </li>
+                    <li id="login-nav-link" class="nav-link border icon no-sub-menu">
+                        <a href="/existing-customers"><span class="i-edit_user"></span></a>
+                        <a href="/existing-customers" class="nav-icon-link">Sign-in</a>
+                    </li>
+
+                    <li id="search-nav-link" class="nav-link border icon no-sub-menu">
+                        <a href="/search">
+                            <span class="i-search">
+                                <small class="hidden">search</small>
+                            </span>
+                        </a>
+                        <a href="/search" class="nav-icon-link">Search</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <section class="sub-nav-wrapper">
+        <nav class="sub-navigation shadow-bottom">
+            <div class="white-background section-wrapper menu-buttons-wrapper text-right">
+                <div class="row">
+                    <div class="nav-menu-action-buttons-wrapper text-right nav-buttons-outer-wrapper">
+                        <div class="medium-10 medium-offset-1 end columns">
+                            <div class="get-a-quote-wrapper bring-to-top">
+                                <a href="<!--#echo var="baseurl" -->/qpm/qpm-login-page" class="button secondary ret-quote" target="_blank">Retrieve a quote</a>
+                                <button class="primary get-quote-button"><a>Get a quote</a>
+                                </button>
+                                <div class="get-a-quote-menu text-center panel radius bring-to-top">
+                                    <div class="arrow-up-with-shadow-small white-background"></div>
+                                    <ul>
+                                        <li><a href="<!--#echo var="carquotebaseurl" -->/quote/car/PR0001/PL0001/BR0001/details/get-motor-quote-details#" target="_blank" title="Car">Car</a>
+                                        </li>
+                                        <li><a href="http://css.directline.com/insurance/home/startaction.do?entrypoint=0001&amp;productline=0031" target="_blank" title="Home">Home</a>
+                                        </li>
+                                        <li><a href="http://css.directline.com/insurance/travel/startaction.do?entrypoint=0001&amp;productline=0005" target="_blank" title="Travel">Travel</a>
+                                        </li>
+                                        <li><a href="http://css.directline.com/insurance/pet/startaction.do?entrypoint=0001&amp;productline=0004" target="_blank" title="Pet">Pet</a>
+                                        </li>
+                                        <li><a href="http://css.directline.com/insurance/rescue/startaction.do?entrypoint=0001&amp;productline=0007" target="_blank" title="Breakdown">Breakdown</a>
+                                        </li>
+                                        <li><a href="#" data-reveal-id="modal-select-interim" title="Select">SELECT Premier</a></li>
+                                        <li><a href="#" data-reveal-id="get-a-quote-banner-modal" title="Life">Life</a>
+                                        </li>
+                                        <li><a href="http://css.directline.com/insurance/motor/startaction.do?entrypoint=0001&amp;productline=0016" target="_blank" title="Van">Van</a>
+                                        </li>
+                                        <li><a href="//www.directlineforbusiness.co.uk/landlord-insurance" target="_blank" title="Landlord">Landlord</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center sub-nav-list-wrapper" data-equalizer>
+                <!-- PRODUCT MENU -->
+                <div class="medium-5 medium-offset-1 columns section-nav" id="product-nav">
+                    <div class="medium-4 columns text-left" data-equalizer-watch>
+                        <ul class="sub-menu-lev-1" id="product-nav-large">
+                            <li id="car-insurance-menu" class="menu-item" data-pos="10"><a>Car Insurance</a>
+                            </li>
+                            <li id="home-insurance-menu" class="menu-item" data-pos="20"><a>Home Insurance</a>
+                            </li>
+                            <li id="pet-insurance-menu" class="menu-item" data-pos="29"><a>Pet Insurance</a>
+                            </li>
+                            <li id="travel-insurance-menu" class="menu-item" data-pos="38"><a>Travel Insurance</a>
+                            </li>
+                            <li id="life-insurance-menu" class="menu-item" data-pos="47"><a>Life Insurance</a>
+                            </li>
+                            <li id="select-insurance-menu" class="menu-item" data-pos="56"><a>SELECT Premier</a>
+                            </li>
+                            <li id="breakdown-insurance-menu" class="menu-item" data-pos="65"><a>Breakdown Cover</a>
+                            </li>
+                            <li id="van-insurance-menu" class="menu-item" data-pos="74"><a href="http://www.directlineforbusiness.co.uk/van-insurance" target="_blank" title="Van" rel="nofollow">Van Insurance</a>
+                            </li>
+                            <li id="landlord-insurance-menu" class="menu-item" data-pos="83"><a href="http://www.directlineforbusiness.co.uk/landlord-insurance" target="_blank" title="Landlord" rel="nofollow">Landlord</a>
+                            </li>
+                            <li id="business-insurance-menu" class="menu-item" data-pos="92"><a href="//www.directlineforbusiness.co.uk" target="_blank" rel="nofollow">Business</a
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="medium-1 columns shadow-left shadow-left-wrapper init-hidden" data-equalizer-watch>
+                        <div class="nav-menu-arrow arrow-left-with-shadow-small white-background init-hidden"></div>
+                    </div>
+                    <div class="medium-4 end columns text-left" data-equalizer-watch>
+                        <div class="sub-menu-lev-2-wrapper" id="sub-car-insurance-menu">
+                            <a href="/car-insurance">Overview</a>
+                            
+                            <a href="/car-insurance/options">Our cover levels</a>
+                            
+                            <a href="/car-insurance/discounts">Discounts</a>
+                            
+                            <a href="/car-insurance/telematics">DrivePlus</a>
+                            
+                            <a href="/car-insurance/explore">Explore</a>
+                            
+                            <a href="/car-insurance/policy-documents">Documents</a>
+                            
+                            <a href="/car-insurance/faqs">FAQs</a>
+                            
+                            <a href="/car-insurance/claims">Make a claim</a>
+                            
+                            <a href="/car-insurance/contact-us">Get in touch</a>
+                            
+                        </div>
+                        <div class="sub-menu-lev-2-wrapper" id="sub-home-insurance-menu">
+                            <a href="/home-insurance">Overview</a>
+                            
+                            <a href="/home-insurance/options">Our products</a>
+                            
+                            <a href="/home-insurance/explore">Explore</a>
+                            
+                            <a href="/home-insurance/claims">Make a claim</a>
+                            
+                            <a href="/home-insurance/policy-documents">Documents</a>
+                            
+                            <a href="/home-insurance/faqs">FAQs</a>
+                            
+                            <a href="/home-insurance/contact-us">Get in touch</a>
+                            
+                        </div>
+                        <div class="sub-menu-lev-2-wrapper" id="sub-pet-insurance-menu">
+                            <a href="/pet-insurance">Overview</a>
+                            
+                            <a href="/pet-insurance/options">Our cover levels</a>
+                            
+                            <a href="/pet-insurance/explore">Explore</a>
+                            
+                            <a href="/pet-insurance/claims">Make a claim</a>
+                            
+                            <a href="/pet-insurance/policy-documents">Documents</a>
+                            
+                            <a href="/pet-insurance/faqs">FAQs</a>
+                            
+                            <a href="/pet-insurance/contact-us">Get in touch</a>
+                            
+                        </div>
+                        <div class="sub-menu-lev-2-wrapper" id="sub-travel-insurance-menu">
+                            <a href="/travel-insurance">Overview</a>
+                            
+                            <a href="/travel-insurance/options">Our cover levels</a>
+                            
+                            <a href="/travel-insurance/explore">Explore</a>
+                            
+                            <a href="/travel-insurance/claims">Make a claim</a>
+                            
+                            <a href="/travel-insurance/policy-documents">Documents</a>
+                            
+                            <a href="/travel-insurance/faqs">FAQs</a>
+                            
+                            <a href="/travel-insurance/contact-us">Get in touch</a>
+                            
+                        </div>
+                        <div class="sub-menu-lev-2-wrapper" id="sub-life-insurance-menu">
+                            <a href="/life-insurance">Overview</a>
+                            
+                            <a href="/life-insurance/options">Our products</a>
+                            
+                            <a href="/life-insurance/explore">Explore</a>
+                            
+                            <a href="/life-insurance/claims">Make a claim</a>
+                            
+                            <a href="/life-insurance/policy-documents">Documents</a>
+                            
+                            <a href="/life-insurance/faqs">FAQs</a>
+                            
+                            <a href="/life-insurance/contact-us">Get in touch</a>
+                            
+                        </div>
+                        <div class="sub-menu-lev-2-wrapper" id="sub-select-insurance-menu">
+                            <a href="/select-premier">Overview</a>
+                            
+                            <a href="/select-premier/options">Our cover levels</a>
+                            
+                            <a href="/select-premier/explore">Explore</a>
+                            
+                            <a href="/select-premier/claims">Make a claim</a>
+                            
+                            <a href="/select-premier/policy-documents">Documents</a>
+                            
+                            <a href="/select-premier/faqs">FAQs</a>
+                            
+                            <a href="/select-premier/contact-us">Get in touch</a>
+                            
+                        </div>
+                        <div class="sub-menu-lev-2-wrapper" id="sub-breakdown-insurance-menu">
+                            <a href="/breakdown-cover">Overview</a>
+                            <a href="/breakdown-cover/options">Our cover levels</a>
+                            <a href="/breakdown-cover/explore">Explore</a>
+                            <a href="/breakdown-cover/claims/broken-down">Broken down?</a>
+                            <a href="/breakdown-cover/policy-documents">Documents</a>
+                            <a href="/breakdown-cover/faqs">FAQs</a>
+                            <a href="/breakdown-cover/contact-us">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PRODUCT MENU END -->
+                <!-- HELP MENU -->
+                <div class="medium-5 medium-offset-1 columns section-nav" id="help-nav">
+                    <div class="medium-4 columns text-left" data-equalizer-watch>
+                        <ul class="sub-menu-lev-1">
+                            <li id="help-docs-menu" class="menu-item" data-pos="10"><a>Documents</a>
+                            </li>
+                            <li id="help-faq-menu" class="menu-item" data-pos="20"><a>FAQs</a>
+                            </li>
+                            <li id="help-contact-menu" class="menu-item" data-pos="29"><a>Get in touch</a>
+                            </li>
+                            <li id="manage-policy-menu" class="menu-item" data-pos="40"><a href="/existing-customers">Manage your policy online</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="medium-1 columns shadow-left shadow-left-wrapper init-hidden" data-equalizer-watch>
+                        <div class="nav-menu-arrow arrow-left-with-shadow-small white-background init-hidden"></div>
+                    </div>
+                    <div class="medium-4 end columns text-left" data-equalizer-watch>
+                        <div class="sub-menu-lev-2-wrapper" id="sub-help-docs-menu">
+                            <a href="/car-insurance/policy-documents">Car</a>
+                            
+                            <a href="/home-insurance/policy-documents">Home</a>
+                            
+                            <a href="/travel-insurance/policy-documents">Travel</a>
+                            
+                            <a href="/pet-insurance/policy-documents">Pet</a>
+                            
+                            <a href="/breakdown-cover/policy-documents">Breakdown</a>
+                            
+                            <a href="/select-premier/policy-documents">SELECT Premier</a>
+                            
+                            <a href="/life-insurance/policy-documents">Life</a>
+                            
+                        </div>
+                        <div class="sub-menu-lev-2-wrapper" id="sub-help-faq-menu">
+                            <a href="/car-insurance/faqs">Car</a>
+                            
+                            <a href="/home-insurance/faqs">Home</a>
+                            
+                            <a href="/travel-insurance/faqs">Travel</a>
+                            
+                            <a href="/pet-insurance/faqs">Pet</a>
+                            
+                            <a href="/breakdown-cover/faqs">Breakdown</a>
+                            
+                            <a href="/select-premier/faqs">SELECT Premier</a>
+                            
+                            <a href="/life-insurance/faqs">Life</a>
+                            
+                        </div>
+                        <div class="sub-menu-lev-2-wrapper" id="sub-help-contact-menu">
+                            <a href="/car-insurance/contact-us">Car</a>
+                            
+                            <a href="/home-insurance/contact-us">Home</a>
+                            
+                            <a href="/travel-insurance/contact-us">Travel</a>
+                            
+                            <a href="/pet-insurance/contact-us">Pet</a>
+                            
+                            <a href="/breakdown-cover/contact-us">Breakdown</a>
+                            
+                            <a href="/select-premier/contact-us">SELECT Premier</a>
+                            
+                            <a href="/life-insurance/contact-us">Life</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- HELP MENU END-->
+                <!-- EXPLORE MENU -->
+                <div class="medium-5 medium-offset-1 columns section-nav" id="explore-nav">
+                    <div class="medium-4 columns text-left" data-equalizer-watch>
+                        <ul class="sub-menu-lev-1">
+                            <li id="explore-product-menu" class="menu-item" data-pos="11"><a class="red">By products</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="medium-1 columns shadow-left shadow-left-wrapper" data-equalizer-watch>
+                        <div class="nav-menu-arrow arrow-left-with-shadow-small white-background" style="top: 12%; display: block !important;"></div>
+                    </div>
+                    <div class="medium-4 end columns text-left" data-equalizer-watch>
+                        <div class="sub-menu-lev-2-wrapper" id="sub-explore-product-menu" style="display:block !important;">
+                            <a href="/car-insurance/explore">Car</a>
+                            
+                            <a href="/home-insurance/explore">Home</a>
+                            
+                            <a href="/travel-insurance/explore">Travel</a>
+                            
+                            <a href="/pet-insurance/explore">Pet</a>
+                            
+                            <a href="/breakdown-cover/explore">Breakdown</a>
+                            
+                            <a href="/select-premier/explore">SELECT Premier</a>
+                            
+                            <a href="/life-insurance/explore">Life</a>
+
+                            <a href="http://www.letsgo.directline.com" target="_blank">Let's Go</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- EXPLORE MENU END-->
+                <!-- PROMO PANELS -->
+                <div class="medium-6 end columns menu-promo-wrapper">
+<!--                     <div id="homepage-promo-container" class="menu-promo-container text-left hidden">
+                        <img src="/lib/img/promo/wolf.jpg" title="Meet The Wolf"alt="Meet The Wolf">
+                        <a href="/wolf" class="button secondary high">Learn more</a>
+                    </div> -->
+<!--                     <div id="car-promo-container" class="menu-promo-container text-left hidden">
+                        <img src="/lib/img/promo/car_promo.jpg" title="Telematics" alt="Telematics">
+                        <a href="/car-insurance/telematics" class="button secondary low">Learn more</a>
+                    </div> -->
+                    <div id="home-promo-container" class="menu-promo-container text-left hidden">
+                        <img src="/lib/img/promo/home_promo.jpg" title="Home Discount" alt="Home Discount">
+                        <a href="/home-insurance" class="button secondary high">Learn more</a>
+                        <p><small>Introductory offer is for combined buildings and contents cover, which excludes optional covers. Minimum premiums apply. Excludes SELECT Premier.</small></p>
+                    </div>
+                    <div id="pet-promo-container" class="menu-promo-container text-left hidden">
+                        <img src="/lib/img/promo/pet_promo.jpg" title="Pet Discounts" alt="Pet Discounts">
+                        <a href="/pet-insurance" class="button secondary high">Learn more</a>
+                        <p><small>10% discount when you buy online plus a further 15% off when you take out a multi-pet insurance policy.</small></p>
+                    </div>
+                    <div id="travel-promo-container" class="menu-promo-container text-left hidden">
+                        <img src="/lib/img/promo/travel_promo.jpg" title="Annual Travel Discounts" alt="Annual Travel Discounts">
+                        <a href="/travel-insurance" class="button secondary middle">Learn more</a>
+                        <p><small>Our annual cover is available to under 75s only.</small></p>
+                    </div>
+                    <div id="life-promo-container" class="menu-promo-container text-left hidden">
+                        <img src="/lib/img/promo/life_promo.jpg" title="Life Insurance M&amp;S vouchers" alt="Life Insurance M&amp;S vouchers">
+                        <a href="/life-insurance" class="button secondary middle">Learn more</a>
+                        <p><small>Take out life cover and you'll recieve &pound;60 worth of M&amp;S vouchers.</small></p>
+                    </div>
+                    <div id="select-promo-container" class="menu-promo-container text-left hidden">
+                        <img src="/lib/img/promo/select_promo.jpg" title="SELECT Premier" alt="SELECT Premier">
+                        <a href="/select-premier" class="button secondary low">Learn more</a>
+                    </div>
+                    <div id="breakdown-promo-container" class="menu-promo-container text-left hidden">
+                        <img src="/lib/img/promo/breakdown_promo.jpg" title="Breakdown cover offer" alt="Breakdown cover offer">
+                        <a href="/breakdown-cover" class="button secondary high">Learn more</a>
+                        <p><small>Misfuelling applies to Rescue Plus and Recovery levels only. 10% of online customers would achieve this price.</small></p>
+                    </div>
+                    <div id="default-promo-container" class="menu-promo-container text-left">
+                        <img src="/lib/img/promo/car_promo.jpg" title="Telematics" alt="Telematics">
+                        <a href="/car-insurance/telematics" class="button secondary low">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <div class="white-background section-wrapper breadcrumb-wrapper bring-to-top">
+        <div class="contain-to-grid sticky">
+            <nav class="top-bar" data-topbar role="navigation">
+                <div class="row">
+                    <div class="medium-6 large-5 medium-offset-1 columns breadcrumb-links">
